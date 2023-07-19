@@ -1,0 +1,110 @@
+@use "../mixin" as *;
+
+.seminors {
+	position: relative;
+	background-image: url(/assets/img/bg_moku1.svg);
+	background-size: 100% 70px;
+
+	&__img {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		height: 100%;
+		z-index: 0;
+		img {
+			height: 100%;
+		}
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+		position: relative;
+		z-index: 4;
+		padding: 40px 0;
+	}
+
+	&__item {
+		background: linear-gradient(90deg,$accent 220px, $white 220px);
+		display: flex;
+		box-shadow: 0 0 4px 0 rgba(0,0,0,0.25);
+		@include sm {
+			background: linear-gradient(135deg,$accent 220px, $white 220px);
+			flex-direction: column;
+		}
+	}
+
+	&__left {
+		display: flex;
+		align-items: center;
+		position: relative;
+		padding: 30px;
+		flex: none;
+		min-width: 365px;
+		@include sm {
+			min-width: inherit;
+		}
+	}
+
+	&__book {
+		height: 200px;
+		z-index: 2;
+
+		img {
+			height: 100%;
+		}
+	}
+
+	&__image {
+		z-index: 0;
+		margin-left: -8%;
+		position: absolute;
+		left: 200px;
+
+		&.-two {
+			margin-bottom: -60px;
+			margin-left: -13%;
+		}
+	}
+
+	&__text {
+		// margin-left: 5%;
+		width: 100%;
+		padding: 30px;
+		background-image: url(/assets/img/semibg1.svg);
+		background-repeat: no-repeat;
+		background-position: right;
+		background-size: auto 100%;
+
+		&.-two {
+			background-image: url(/assets/img/semibg2.svg);
+		}
+
+		&.-three {
+			background-image: url(/assets/img/semibg3.svg);
+		}
+
+		&.-four {
+			background-image: url(/assets/img/semibg4.svg);
+		}
+
+		h3 {
+			font-size: 20px;
+			font-weight: bold;
+		}
+
+		p {
+			margin-top: 20px;
+			min-height: 80px;
+		}
+	}
+
+	&__btn {
+		margin-top: 20px;
+		width: 268px;
+		@include sm {
+			width: 100%;
+		}
+	}
+}

@@ -1,0 +1,58 @@
+@use "../mixin" as *;
+
+.semitop {
+	background-image: url(/assets/img/semitop_bg.webp);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 140px;
+	padding-bottom: 140px;
+	@include sm {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+
+	&__title {
+		background-color: $white;
+		display: flex;
+		gap: 20px;
+		align-items: center;
+		padding: 10px 40px;
+		@include sm {
+			padding: 10px;
+			gap: 10px;
+			flex-wrap: wrap;
+			// justify-content: center;
+			background-color: rgba(255,255,255,0.9);
+		}
+
+		h1 {
+			flex: none;
+			font-size: 30px;
+			font-weight: bold;
+			@include sm {
+				font-size: 20px;
+				line-height: 3;
+			}
+		}
+	}
+
+	&__hel {
+		img {
+			vertical-align: middle;
+		}
+		@include sm {
+			width: 16%;
+		}
+	}
+
+	&__imgs {
+		display: flex;
+		justify-content: flex-end;
+		gap: 20px;
+		width: 100%;
+		@include sm {
+			gap: 20px;
+		}
+	}
+}

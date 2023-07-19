@@ -1,16 +1,93 @@
+@use "../mixin" as *;
+
 .btn {
-	display: inline-block;
-	position: relative;
-	padding: 16px 50px;
-	border-style: none;
-	color: #fff;
-	text-decoration: none;
-	text-align: center;
-	font-family: inherit;
-	line-height: inherit;
-	letter-spacing: inherit;
-	appearance: none;
-	outline: none;
-	cursor: pointer;
-	user-select: none;
+  display: inline-block;
+  position: relative;
+  padding: 10px;
+  background-color: $gr_main;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+  user-select: none;
+  border: none;
+  border-radius: 50px;
+  width: 100%;
+
+  &.-header {
+    padding: 4px 16px;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    &::before {
+      content: "";
+      width: 18px;
+      height: 18px;
+      background-image: url(/assets/img/icon_tel.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    @include sm {
+      padding: 5px;
+      &::before {
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+
+  &.-topsche {
+    padding-left: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    &::before {
+      content: "";
+      width: 25px;
+      height: 25px;
+      background-image: url(/assets/img/icon_tel-w.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    @include sm {
+      padding-left: 20px;
+      line-height: 1.5;
+    }
+  }
+
+  &.-footer {
+    border-radius: 0;
+    border: 1px solid $white;
+  }
+
+  &.-flat {
+    border-radius: 0;
+  }
+
+  &.-info {
+    border-radius: 0;
+    border: 1px solid $gr_main;
+    color: $gr_main;
+    background-color: transparent;
+  }
+
+  &.-apply {
+    border-radius: 10px;
+  }
+
+  &.-content {
+    background-color: $gr_white;
+    border-radius: 10px;
+    border: 1px solid $gr_main;
+    color: $gr_main;
+  }
 }

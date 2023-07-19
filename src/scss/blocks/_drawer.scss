@@ -1,0 +1,62 @@
+@use "../mixin" as *;
+
+// ハンバーガーメニューの中身
+.drawer {
+	position: fixed;
+	z-index: 1500;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 80%;
+	max-width: 300px;
+	background-color: $baige;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+	opacity: 0;
+	visibility: hidden;
+	transform: translateX(100%);
+	transition: all 0.5s;
+
+	.is-drawer-active & {
+		@include sm {
+			opacity: 1;
+			visibility: visible;
+			transform: none;
+		}
+	}
+
+	&__link {
+		display: inline-block;
+		padding: 20px;
+		width: 100%;
+		border-bottom: 1px solid $white;
+		color: $black;
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+	&__tel {
+		padding: 20px;
+	}
+}
+
+.drawer__shade {
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	opacity: 0;
+	visibility: hidden;
+	transition-property: opacity, visibility;
+	transition-duration: 0.5s;
+
+	.is-drawer-active & {
+		@include sm {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+}

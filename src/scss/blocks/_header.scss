@@ -1,0 +1,170 @@
+@use "../mixin" as *;
+
+.header {
+	background-image: url(/assets/img/bg_moku1.svg);
+	background-size: 100% 30px;
+
+	&__first {
+		padding-top: 20px;
+		padding-bottom: 15px;
+		background-image: url(/assets/img/header__trees1.svg);
+		background-color: $baige;
+		background-repeat: no-repeat;
+		background-size: 120px;
+		background-position-x: calc(50% + 200px);
+		background-position-y: 100%;
+		@include sm {
+			background-size: 80px;
+			background-position-x: 60%;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+	}
+
+	&__inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		max-width: $pc_width;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	&__title {
+		display: flex;
+		gap: 15px;
+		align-items: center;
+		@include sm {
+			gap: 5px;
+		}
+
+		a {
+			color: $black;
+			text-decoration: none;
+			font-size: 24px;
+			font-weight: bold;
+			@include sm {
+				font-size: 14px;
+				line-height: 1.1;
+				margin-right: 40px;
+			}
+		}
+	}
+
+	&__logo {
+		img {
+			width: 40px;
+		}
+	}
+
+	&__list {
+		display: flex;
+
+		@include sm {
+			display: none;
+		}
+	}
+
+	&__sp-menu {
+		@include sm_up {
+			display: none;
+		}
+	}
+
+	&__second {
+		background-color: $gr_light;
+		background-image:
+		linear-gradient(0deg, $gr_main 50%, transparent 50%);
+		background-size: 20px 20px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		overflow: hidden;
+	}
+
+	&__nav {
+		width: 100%;
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			background-image: url(/assets/img/header__trees2.svg);
+			width: 148px;
+			height: 50px;
+			top: 1px;
+			background-repeat: no-repeat;
+			left: -180px;
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			background-image: url(/assets/img/header__trees2.svg);
+			width: 148px;
+			height: 50px;
+			top: 1px;
+			background-repeat: no-repeat;
+			right: -180px;
+		}
+	}
+
+	&__list {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__list li:first-child {
+		a {
+			&::before {
+				background-image: url(/assets/img/icon_home-h.svg);
+			}
+		}
+	}
+	&__list li:nth-child(3) {
+		a {
+			&::before {
+				background-image: url(/assets/img/icon_semi-h.svg);
+			}
+		}
+	}
+	&__list li:nth-child(4) {
+		a {
+			&::before {
+				background-image: url(/assets/img/icon_info-h.svg);
+			}
+		}
+	}
+	&__list li:last-child {
+		a {
+			&::before {
+				background-image: url(/assets/img/icon_mail-h.svg);
+			}
+		}
+	}
+
+	&__link {
+		display: flex;
+		gap: 5px;
+		justify-content: center;
+		align-items: center;
+		padding: 0 20px;
+		height: 30px;
+		background-color: $white;
+		color: $black;
+		text-decoration: none;
+		border-radius: 10px;
+		font-size: 18px;
+		@include lg {
+			width: 160px;
+			padding: 0;
+		}
+
+		&::before {
+			content: "";
+			background-image: url(/assets/img/icon_about-h.svg);
+			width: 20px;
+			height: 20px;
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+	}
+}
