@@ -4,7 +4,7 @@
  * Enqueue scripts and styles.
  */
 add_action('wp_enqueue_scripts', function () {
-	wp_enqueue_style('moto-music-style', get_stylesheet_uri(), [], _S_VERSION);
+	wp_enqueue_style('ringyo-mokuzai-style', get_stylesheet_uri(), [], _S_VERSION);
 
 	wp_enqueue_script(
 		'daiso-theme-js',

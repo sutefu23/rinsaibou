@@ -25,7 +25,7 @@ const isProduction = process.env.NODE_ENV === "production"
 // ローカルサーバー
 const serve = (cb) => {
   browserSync.init({
-    proxy: process.env.WP_URL ?? "moto-music.test",
+    proxy: process.env.WP_URL ?? "ringyo-mokuzai.test",
     ghostMode: false,
     files: [path.php, path.js.dest, path.img],
   })
@@ -56,7 +56,7 @@ const watchTask = () => {
 
 // zip 生成
 const zip = (cb) => {
-  const archiver = new DirArchiver(".", "../moto-music-new.zip", false, [
+  const archiver = new DirArchiver(".", "../ringyo-mokuzai-new.zip", false, [
     ".DS_Store",
     ".git",
     ".gitignore",

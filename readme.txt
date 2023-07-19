@@ -1,4 +1,4 @@
-=== MOTO MUSIC TOWN 2023 ===
+=== RINGYO MOKUZAI SEIZOUGYOU 2023 ===
 
 Contributors: automattic
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
@@ -10,7 +10,7 @@ Stable tag: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
-A starter theme called MOTO MUSIC TOWN 2023.
+A starter theme called RINGYO MOKUZAI SEIZOUGYOU 2023.
 
 == Description ==
 
@@ -26,7 +26,7 @@ Description
 
 = Does this theme support any plugins? =
 
-MOTO MUSIC TOWN 2023 includes support for WooCommerce and for Infinite Scroll in Jetpack.
+RINGYO MOKUZAI SEIZOUGYOU 2023 includes support for WooCommerce and for Infinite Scroll in Jetpack.
 
 == Changelog ==
 
