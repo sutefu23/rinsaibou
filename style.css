@@ -1,0 +1,254 @@
+@charset "UTF-8";
+/*!
+Theme Name: MOTO MUSIC TOWN 2023
+Author: MOTO MUSIC
+Description: Description
+Version: 1.0.1
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: daiso
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+MOTO MUSIC TOWN 2023 is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+/* ベース定義 */
+* {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+body {
+  font-family: "Helvetica Neue", "Arial", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Meiryo", sans-serif;
+  line-height: 1.75;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Utilities */
+.u-left {
+  text-align: left !important;
+}
+
+.u-center {
+  text-align: center !important;
+}
+
+.u-right {
+  text-align: right !important;
+}
+
+.u-font-bold {
+  font-weight: bold !important;
+}
+
+.u-font-normal {
+  font-weight: normal !important;
+}
+
+.u-block {
+  display: block !important;
+}
+
+.u-inline-block {
+  display: inline-block !important;
+}
+
+.u-inline {
+  display: inline !important;
+}
+
+@media screen and (max-width: 767px) {
+  .u-block-sp {
+    display: block !important;
+  }
+
+  .u-inline-block-sp {
+    display: inline-block !important;
+  }
+
+  .u-inline-sp {
+    display: inline !important;
+  }
+}
+@media screen and (min-width: 768px), print {
+  .u-block-pc {
+    display: block !important;
+  }
+
+  .u-inline-block-pc {
+    display: inline-block !important;
+  }
+
+  .u-inline-pc {
+    display: inline !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .u-hidden-sp {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 768px), print {
+  .u-hidden-pc {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 1120px) {
+  .container {
+    width: 1040px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 1119px) {
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.btn {
+  display: inline-block;
+  position: relative;
+  padding: 16px 50px;
+  border-style: none;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-family: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.pagination {
+  font-size: 1rem;
+  position: relative;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.pagination a {
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+}
+.pagination a:hover {
+  opacity: 0.8;
+}
+.pagination__prev a, .pagination__prev span, .pagination__next a, .pagination__next span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+}
+@media screen and (max-width: 767px) {
+  .pagination__prev a, .pagination__prev span, .pagination__next a, .pagination__next span {
+    width: 40px;
+    height: 40px;
+  }
+}
+.pagination__prev.-disabled, .pagination__next.-disabled {
+  opacity: 0.3;
+}
+.pagination__prev {
+  margin-right: 50px;
+}
+@media screen and (max-width: 767px) {
+  .pagination__prev {
+    margin-right: 10px;
+  }
+}
+.pagination__next {
+  margin-left: 50px;
+}
+@media screen and (max-width: 767px) {
+  .pagination__next {
+    margin-left: 10px;
+  }
+}
+.pagination > .page-numbers {
+  display: flex;
+  justify-content: center;
+  color: inherit;
+  flex-wrap: wrap;
+}
+.pagination > .page-numbers > li:nth-child(n+2) {
+  margin-left: 20px;
+}
+@media screen and (max-width: 767px) {
+  .pagination > .page-numbers > li:nth-child(n+2) {
+    margin-left: 5px;
+  }
+}
+.pagination > .page-numbers > li > .page-numbers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  font-size: 16px;
+  font-family: Lato, sans-serif;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+}
+@media screen and (max-width: 767px) {
+  .pagination > .page-numbers > li > .page-numbers {
+    width: 40px;
+    height: 40px;
+  }
+}
+.pagination > .page-numbers > li > .page-numbers.current {
+  background-color: #004ea2;
+  color: #fff;
+}
+.pagination > .page-numbers > li > .page-numbers.dots {
+  border-style: none;
+}
+.pagination__svg {
+  width: 1.125em;
+}
+.pagination__svg.-prev {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+}

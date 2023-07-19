@@ -1,0 +1,38 @@
+@use "mixin" as *;
+
+/* Utilities */
+
+//text-align
+.u-left{ text-align: left !important; }
+.u-center{ text-align: center !important; }
+.u-right{	text-align: right !important;	}
+
+//font-weight
+.u-font-bold{ font-weight: bold !important; }
+.u-font-normal{ font-weight: normal !important; }
+
+//display
+.u-block { display: block !important; }
+.u-inline-block { display: inline-block !important; }
+.u-inline { display: inline !important; }
+
+@include sm {
+	.u-block-sp { display: block !important; }
+	.u-inline-block-sp { display: inline-block !important; }
+	.u-inline-sp { display: inline !important; }
+}
+@include sm_up {
+	.u-block-pc { display: block !important; }
+	.u-inline-block-pc { display: inline-block !important; }
+	.u-inline-pc { display: inline !important; }
+}
+
+//SP非表示
+@include sm {
+	.u-hidden-sp{	display: none !important; }
+}
+
+//PC非表示
+@include sm_up {
+	.u-hidden-pc{	display: none !important; }
+}
