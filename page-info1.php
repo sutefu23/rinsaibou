@@ -1,3 +1,6 @@
+<?php
+get_header();
+?>
 <main>
 	<div class="infoart">
 		<div class="container">
@@ -39,3 +42,5 @@
 		</div>
 	</div>
 </main>
+<?php
+get_footer();

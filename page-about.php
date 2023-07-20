@@ -1,3 +1,7 @@
+<?php
+get_header();
+?>
+
 <main>
 	<section class="abtop">
 		<header class="abtop__title">
@@ -54,3 +58,5 @@
 		</div>
 	</section>
 </main>
+<?php
+get_footer();

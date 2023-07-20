@@ -333,7 +333,9 @@ ul {
 }
 @media screen and (max-width: 767px) {
   .btn.-header {
+    gap: 10px;
     padding: 5px;
+    justify-content: center;
   }
   .btn.-header::before {
     width: 25px;
@@ -1408,7 +1410,7 @@ ul {
 .seminors {
   position: relative;
   background-image: url(./img/common/bg_moku1.svg);
-  background-size: 100% 70px;
+  background-size: 200% auto;
 }
 .seminors__img {
   position: absolute;

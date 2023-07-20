@@ -36,7 +36,9 @@
       background-size: contain;
     }
     @include sm {
+      gap: 10px;
       padding: 5px;
+      justify-content: center;
       &::before {
         width: 25px;
         height: 25px;

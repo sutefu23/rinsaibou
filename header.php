@@ -33,10 +33,10 @@
 				<nav class="drawer" id="drawer">
 					<ul class="drawer__list">
 						<li><a href="/" class="drawer__link">ホーム</a></li>
-						<li><a href="about" class="drawer__link">組織概要</a></li>
-						<li><a href="seminor" class="drawer__link">講習会案内</a></li>
-						<li><a href="info" class="drawer__link">お知らせ</a></li>
-						<li><a href="contact" class="drawer__link">お問い合わせ</a></li>
+						<li><a href="/about" class="drawer__link">組織概要</a></li>
+						<li><a href="/seminor" class="drawer__link">講習会案内</a></li>
+						<li><a href="/info" class="drawer__link">お知らせ</a></li>
+						<li><a href="/contact" class="drawer__link">お問い合わせ</a></li>
 						<li>
 						</li>
 					</ul>
@@ -51,11 +51,11 @@
 			<div class="header__inner">
 				<nav class="header__nav">
 					<ul class="header__list">
-						<li><a href="" class="header__link">ホーム</a></li>
-						<li><a href="about.html" class="header__link">組織概要</a></li>
-						<li><a href="seminor.html" class="header__link">講習会案内</a></li>
-						<li><a href="info.html" class="header__link">お知らせ</a></li>
-						<li><a href="contact.html" class="header__link">お問い合わせ</a></li>
+						<li><a href="/" class="header__link">ホーム</a></li>
+						<li><a href="/about" class="header__link">組織概要</a></li>
+						<li><a href="/seminor" class="header__link">講習会案内</a></li>
+						<li><a href="/info" class="header__link">お知らせ</a></li>
+						<li><a href="/contact" class="header__link">お問い合わせ</a></li>
 					</ul>
 				</nav>
 			</div>

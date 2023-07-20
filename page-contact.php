@@ -1,3 +1,7 @@
+<?php
+get_header();
+?>
+
 <main>
 	<section class="contact">
 		<header class="contact__title">
@@ -50,3 +54,5 @@
 		</div>
 	</section>
 </main>
+<?php
+get_footer();

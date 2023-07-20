@@ -1,3 +1,6 @@
+<?php
+get_header();
+?>
 <main>
 	<section class="semitop">
 		<div class="container">
@@ -46,7 +49,7 @@
 							技能講習を行っています。<br>
 							技能講習登録：福岡労働局 登録期限：2024年3月30日</p>
 						<div class="seminors__btn">
-							<a href="#" class="btn -flat">最新の講習会はこちら　＞</a>
+							<a href="/seminor1" class="btn -flat">最新の講習会はこちら　＞</a>
 						</div>
 					</div>
 				</li>
@@ -63,7 +66,7 @@
 						<h3>安全衛生特別教育</h3>
 						<p>伐木・チェーンソー作業従事者特別教育を行っています。</p>
 						<div class="seminors__btn">
-							<a href="#" class="btn -flat">最新の講習会はこちら　＞</a>
+							<a href="/seminor1" class="btn -flat">最新の講習会はこちら　＞</a>
 						</div>
 					</div>
 				</li>
@@ -80,7 +83,7 @@
 						<h3>行政通達に基づく安全衛生教育等</h3>
 						<p>刈払機取り扱い作業者安全衛生教育を行っています。</p>
 						<div class="seminors__btn">
-							<a href="#" class="btn -flat">最新の講習会はこちら　＞</a>
+							<a href="/seminor1" class="btn -flat">最新の講習会はこちら　＞</a>
 						</div>
 					</div>
 				</li>
@@ -95,7 +98,7 @@
 						<p>安全巡回指導、振動障害巡回特殊健診、
 							実践的リスクアセスメント導入のための集団指導会を行っています。</p>
 						<div class="seminors__btn">
-							<a href="#" class="btn -flat">最新の講習会はこちら　＞</a>
+							<a href="/seminor1" class="btn -flat">最新の講習会はこちら　＞</a>
 						</div>
 					</div>
 				</li>
@@ -121,3 +124,5 @@
 		</div>
 	</section>
 </main>
+<?php
+get_footer();

@@ -1,3 +1,7 @@
+<?php
+get_header();
+?>
+
 <main>
 	<section class="infos">
 		<header class="infos__title">
@@ -21,7 +25,7 @@
 						</div>
 						<p>吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。</p>
 						<div class="infos__btn">
-							<a href="#" class="btn">詳細 ></a>
+							<a href="/info1" class="btn">詳細 ></a>
 						</div>
 					</li>
 					<li class="infos__item">
@@ -34,7 +38,7 @@
 						</div>
 						<p>吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。</p>
 						<div class="infos__btn">
-							<a href="#" class="btn">詳細 ></a>
+							<a href="/info1" class="btn">詳細 ></a>
 						</div>
 					</li>
 					<li class="infos__item">
@@ -47,7 +51,7 @@
 						</div>
 						<p>吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。</p>
 						<div class="infos__btn">
-							<a href="#" class="btn">詳細 ></a>
+							<a href="/info1" class="btn">詳細 ></a>
 						</div>
 					</li>
 				</ul>
@@ -55,3 +59,5 @@
 		</div>
 	</section>
 </main>
+<?php
+get_footer();

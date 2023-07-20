@@ -1,3 +1,6 @@
+<?php
+get_header();
+?>
 <main>
 	<article class="semiart">
 		<section class="semiart__box">
@@ -134,3 +137,5 @@
 		</section>
 	</article>s
 </main>
+<?php
+get_footer();
