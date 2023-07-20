@@ -10,9 +10,9 @@
 		</nav>
 	</div>
 	<div class="footer__img">
-		<img src="<?= IMG ?>/footer.svg" alt="製材のイメージ>
-		</div>
-		<div class=" footer__bar">
+		<img src="<?= IMG ?>/common/footer.svg" alt="製材のイメージ">
+	</div>
+	<div class="footer__bar">
 		<div class="container">
 			<div class="footer__barbox">
 				<h2>林業・木材製造業労働災害防止協会 <span class="u-inline-block">福岡県支部</span></h2>

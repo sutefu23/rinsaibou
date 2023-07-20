@@ -3,14 +3,14 @@
 		<div class="container">
 			<div class="semitop__title">
 				<div class="semitop__hel">
-					<img src="<?= IMG ?>/semitop_hel.svg" alt="ヘルメットアイコン">
+					<img src="<?= IMG ?>/common/semitop_hel.svg" alt="ヘルメットアイコン">
 				</div>
 				<h1>講習会案内</h1>
 				<div class="semitop__imgs">
-					<div class="semitop__img"><img src="<?= IMG ?>/semitop_one.svg" alt="木材加工機械"></div>
-					<div class="semitop__img"><img src="<?= IMG ?>/semitop_two.svg" alt="チェーンソー"></div>
-					<div class="semitop__img"><img src="<?= IMG ?>/semitop_three.svg" alt="刈払機"></div>
-					<div class="semitop__img"><img src="<?= IMG ?>/semitop_four.svg" alt="安全"></div>
+					<div class="semitop__img"><img src="<?= IMG ?>/common/semitop_one.svg" alt="木材加工機械"></div>
+					<div class="semitop__img"><img src="<?= IMG ?>/common/semitop_two.svg" alt="チェーンソー"></div>
+					<div class="semitop__img"><img src="<?= IMG ?>/common/semitop_three.svg" alt="刈払機"></div>
+					<div class="semitop__img"><img src="<?= IMG ?>/common/semitop_four.svg" alt="安全"></div>
 				</div>
 			</div>
 		</div>
@@ -27,17 +27,17 @@
 	</section>
 	<section class="seminors">
 		<div class="seminors__img">
-			<img src="<?= IMG ?>/seminors_img.webp" alt="製材機械">
+			<img src="<?= IMG ?>/common/seminors_img.webp" alt="製材機械">
 		</div>
 		<div class="container">
 			<ul class="seminors__list">
 				<li class="seminors__item">
 					<div class="seminors__left">
 						<div class="seminors__book">
-							<img src="<?= IMG ?>/book1.webp" alt="木材加工の本">
+							<img src="<?= IMG ?>/common/book1.webp" alt="木材加工の本">
 						</div>
 						<div class="seminors__image">
-							<img src="<?= IMG ?>/semiitem1.svg" alt="木材加工機械">
+							<img src="<?= IMG ?>/common/semiitem1.svg" alt="木材加工機械">
 						</div>
 					</div>
 					<div class="seminors__text">
@@ -53,10 +53,10 @@
 				<li class="seminors__item">
 					<div class="seminors__left">
 						<div class="seminors__book">
-							<img src="<?= IMG ?>/book2.webp" alt="安全ナビの本">
+							<img src="<?= IMG ?>/common/book2.webp" alt="安全ナビの本">
 						</div>
 						<div class="seminors__image -two">
-							<img src="<?= IMG ?>/semiitem2.svg" alt="チェーンソー">
+							<img src="<?= IMG ?>/common/semiitem2.svg" alt="チェーンソー">
 						</div>
 					</div>
 					<div class="seminors__text -two">
@@ -70,10 +70,10 @@
 				<li class="seminors__item">
 					<div class="seminors__left">
 						<div class="seminors__book">
-							<img src="<?= IMG ?>/book3.webp" alt="安全な刈払機作業の本">
+							<img src="<?= IMG ?>/common/book3.webp" alt="安全な刈払機作業の本">
 						</div>
 						<div class="seminors__image">
-							<img src="<?= IMG ?>/semiitem3.svg" alt="刈払機">
+							<img src="<?= IMG ?>/common/semiitem3.svg" alt="刈払機">
 						</div>
 					</div>
 					<div class="seminors__text -three">
@@ -87,7 +87,7 @@
 				<li class="seminors__item">
 					<div class="seminors__left">
 						<div class="seminors__book">
-							<img src="<?= IMG ?>/book4.webp" alt="リスクアセスメントの本">
+							<img src="<?= IMG ?>/common/book4.webp" alt="リスクアセスメントの本">
 						</div>
 					</div>
 					<div class="seminors__text -four">
@@ -115,7 +115,7 @@
 					<li>刈払機取扱作業者に対する安全衛生教育<span><a href="#">H12年2月16日付基発第66号</a></span></li>
 				</ol>
 				<div class="low__img">
-					<img src="<?= IMG ?>/low_img.webp" alt="刈払機講習">
+					<img src="<?= IMG ?>/common/low_img.webp" alt="刈払機講習">
 				</div>
 			</div>
 		</div>

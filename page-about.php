@@ -13,13 +13,13 @@
 					私たちの協会では、長年にわたり林材業の労働災害防止対策について取り組みを続け、安全衛生教育、技能講習、集団指導会等の実施や安全衛生技術情報、労働災害情報の提供などを通じて、全国の林材業の現場で労働災害防止活動が着実に実践されるよう、さまざまな事業活動を展開しています。</p>
 				<div class="abtop__imgs">
 					<div class="abtop__img">
-						<img src="<?= IMG ?>/abtop1.webp" alt="安全パトロール１">
+						<img src="<?= IMG ?>/common/abtop1.webp" alt="安全パトロール１">
 					</div>
 					<div class="abtop__img">
-						<img src="<?= IMG ?>/abtop2.webp" alt="振動検診１">
+						<img src="<?= IMG ?>/common/abtop2.webp" alt="振動検診１">
 					</div>
 					<div class="abtop__img">
-						<img src="<?= IMG ?>/abtop3.webp" alt="安全パトロール２">
+						<img src="<?= IMG ?>/common/abtop3.webp" alt="安全パトロール２">
 					</div>
 				</div>
 			</div>

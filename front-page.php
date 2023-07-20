@@ -11,13 +11,13 @@ get_header();
 	</section>
 	<section class="toptext">
 		<div class="toptext__left">
-			<img src="<?= IMG ?>/top_textbg2l.webp" alt="木のイメージ">
+			<img src="<?= IMG ?>/common/top_textbg2l.webp" alt="木のイメージ">
 		</div>
 		<div class="container">
 			<p>私たちの協会では、長年にわたり林材業の労働災害防止対策について取り組みを続け、安全衛生教育、技能講習、集団指導会等の実施や安全衛生技術情報、労働災害情報の提供などを通じて、全国の林材業の現場で労働災害防止活動が着実に実践されるよう、さまざまな事業活動を展開しています。</p>
 		</div>
 		<div class="toptext__right">
-			<img src="<?= IMG ?>/top_textbg2r.webp" alt="木のイメージ">
+			<img src="<?= IMG ?>/common/top_textbg2r.webp" alt="木のイメージ">
 		</div>
 	</section>
 	<section class="info">
@@ -25,7 +25,7 @@ get_header();
 			<div class="info__box">
 				<header class="toptitle">
 					<div class="toptitle__icon">
-						<img src="<?= IMG ?>/icon_info.svg" alt="お知らせ">
+						<img src="<?= IMG ?>/common/icon_info.svg" alt="お知らせ">
 					</div>
 					<h2>お知らせ</h2>
 				</header>
@@ -53,10 +53,10 @@ get_header();
 		</div>
 		<div class="info__bgimgs">
 			<div class="info__bgone">
-				<img src="<?= IMG ?>/info_bg1.svg" alt="草のイメージ">
+				<img src="<?= IMG ?>/common/info_bg1.svg" alt="草のイメージ">
 			</div>
 			<div class="info__bgtwo">
-				<img src="<?= IMG ?>/info_bg2.webp" alt="草刈りのイメージ">
+				<img src="<?= IMG ?>/common/info_bg2.webp" alt="草刈りのイメージ">
 			</div>
 		</div>
 	</section>
@@ -76,13 +76,13 @@ get_header();
 					</div>
 				</div>
 				<div class="toples__right">
-					<img src="<?= IMG ?>/top_lessons.svg" alt="講習の写真">
+					<img src="<?= IMG ?>/common/top_lessons.svg" alt="講習の写真">
 				</div>
 			</div>
 			<section class="topsche">
 				<header class="toptitle">
 					<div class="toptitle__icon">
-						<img src="<?= IMG ?>/icon_lessons.svg" alt="ヘルメットアイコン">
+						<img src="<?= IMG ?>/common/icon_lessons.svg" alt="ヘルメットアイコン">
 					</div>
 					<h2>講習会開催日程</h2>
 				</header>

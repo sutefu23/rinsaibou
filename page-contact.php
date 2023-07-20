@@ -5,7 +5,7 @@
 				<h1>お問い合わせ</h1>
 			</div>
 			<div class="contact__titleimg">
-				<img src="<?= IMG ?>/contitle.svg" alt="振動検診">
+				<img src="<?= IMG ?>/common/contitle.svg" alt="振動検診">
 			</div>
 		</header>
 		<div class="contact__body">
@@ -34,16 +34,16 @@
 			</div>
 			<div class="contact__imgs">
 				<div class="contact__img -one">
-					<img src="<?= IMG ?>/contact1.webp" alt="杉林">
+					<img src="<?= IMG ?>/common/contact1.webp" alt="杉林">
 				</div>
 				<div class="contact__img -two">
-					<img src="<?= IMG ?>/contact2.svg" alt="木材加工機械">
+					<img src="<?= IMG ?>/common/contact2.svg" alt="木材加工機械">
 				</div>
 				<div class="contact__img -three">
-					<img src="<?= IMG ?>/contact3.svg" alt="帯鋸">
+					<img src="<?= IMG ?>/common/contact3.svg" alt="帯鋸">
 				</div>
 				<div class="contact__img -four">
-					<img src="<?= IMG ?>/contact4.webp" alt="林業機械">
+					<img src="<?= IMG ?>/common/contact4.webp" alt="林業機械">
 				</div>
 
 			</div>

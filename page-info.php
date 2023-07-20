@@ -5,7 +5,7 @@
 				<h1>お知らせ</h1>
 			</div>
 			<div class="infos__img">
-				<img src="<?= IMG ?>/infotop.webp" alt="製材のイメージ">
+				<img src="<?= IMG ?>/common/infotop.webp" alt="製材のイメージ">
 			</div>
 		</header>
 		<div class="infos__menu">
@@ -17,7 +17,7 @@
 							<h3>健康診断の開催について</h3>
 						</div>
 						<div class="infos__nameimg">
-							<img src="<?= IMG ?>/info_name.svg" alt="木のイメージ">
+							<img src="<?= IMG ?>/common/info_name.svg" alt="木のイメージ">
 						</div>
 						<p>吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。</p>
 						<div class="infos__btn">
@@ -30,7 +30,7 @@
 							<h3>健康診断の開催について</h3>
 						</div>
 						<div class="infos__nameimg">
-							<img src="<?= IMG ?>/info_name.svg" alt="木のイメージ">
+							<img src="<?= IMG ?>/common/info_name.svg" alt="木のイメージ">
 						</div>
 						<p>吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。</p>
 						<div class="infos__btn">
@@ -43,7 +43,7 @@
 							<h3>健康診断の開催について</h3>
 						</div>
 						<div class="infos__nameimg">
-							<img src="<?= IMG ?>/info_name.svg" alt="木のイメージ">
+							<img src="<?= IMG ?>/common/info_name.svg" alt="木のイメージ">
 						</div>
 						<p>吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。</p>
 						<div class="infos__btn">

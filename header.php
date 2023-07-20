@@ -15,7 +15,7 @@
 			<div class="header__inner">
 				<div class="header__title">
 					<div class="header__logo">
-						<a href="/"><img src="./assets/img/logo.svg" alt="ヘッダーロゴ" /></a>
+						<a href="/"><img src="<?= IMG ?>/common/logo.svg" alt="ヘッダーロゴ" /></a>
 					</div>
 					<a href="#">林業・木材製造業労働災害防止協会　<span class="u-inline-block">福岡県支部</span></a>
 				</div>
@@ -32,11 +32,11 @@
 				</div>
 				<nav class="drawer" id="drawer">
 					<ul class="drawer__list">
-						<li><a href="" class="drawer__link">ホーム</a></li>
-						<li><a href="about.html" class="drawer__link">組織概要</a></li>
-						<li><a href="seminor.html" class="drawer__link">講習会案内</a></li>
-						<li><a href="info.html" class="drawer__link">お知らせ</a></li>
-						<li><a href="contact.html" class="drawer__link">お問い合わせ</a></li>
+						<li><a href="/" class="drawer__link">ホーム</a></li>
+						<li><a href="about" class="drawer__link">組織概要</a></li>
+						<li><a href="seminor" class="drawer__link">講習会案内</a></li>
+						<li><a href="info" class="drawer__link">お知らせ</a></li>
+						<li><a href="contact" class="drawer__link">お問い合わせ</a></li>
 						<li>
 						</li>
 					</ul>

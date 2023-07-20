@@ -26,7 +26,7 @@
 						<a href="#" class="btn -info">TOPに戻る ></a>
 					</div>
 					<div class="infoart__car">
-						<img src="<?= IMG ?>/infoart_car.webp" alt="林業機械" class="infoart__carimg">
+						<img src="<?= IMG ?>/common/infoart_car.webp" alt="林業機械" class="infoart__carimg">
 					</div>
 				</section>
 			</article>

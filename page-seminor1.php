@@ -3,7 +3,7 @@
 		<section class="semiart__box">
 			<header class="semiart__title">
 				<div class="semiart__titleimg">
-					<img src="<?= IMG ?>/semi_img.webp" alt="セミナーイメージ">
+					<img src="<?= IMG ?>/common/semi_img.webp" alt="セミナーイメージ">
 				</div>
 				<div class="container">
 					<div class="semiart__inner">
