@@ -724,6 +724,12 @@ ul {
   background-position-x: calc(50% + 200px);
   background-position-y: 100%;
 }
+@media screen and (max-width: 1079px) {
+  .header__first {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
 @media screen and (max-width: 767px) {
   .header__first {
     background-size: 80px;
@@ -786,6 +792,12 @@ ul {
   padding-top: 10px;
   padding-bottom: 10px;
   overflow: hidden;
+}
+@media screen and (max-width: 1079px) {
+  .header__second {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 .header__nav {
   width: 100%;

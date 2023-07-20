@@ -21,7 +21,7 @@
 					<p>FAX 092-714-2062</p>
 				</div>
 				<div class="footer__btn">
-					<a href="#" class="btn -footer">問い合わせ</a>
+					<a href="/contact" class="btn -footer">問い合わせ</a>
 				</div>
 			</div>
 		</div>

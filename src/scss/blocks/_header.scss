@@ -13,6 +13,10 @@
     background-size: 120px;
     background-position-x: calc(50% + 200px);
     background-position-y: 100%;
+    @include lg_down {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
     @include sm {
       background-size: 80px;
       background-position-x: 60%;
@@ -78,6 +82,10 @@
     padding-top: 10px;
     padding-bottom: 10px;
     overflow: hidden;
+    @include lg_down {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
   }
 
   &__nav {

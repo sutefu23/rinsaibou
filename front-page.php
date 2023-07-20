@@ -198,7 +198,7 @@ get_header();
 						</tbody>
 					</table>
 					<div class="topsche__btn">
-						<a href="#" class="btn -topsche">
+						<a href="tel:0927142061" class="btn -topsche">
 							<p>電話で様式を申請する<span class="u-inline-block">方はこちら　＞</span></p>
 						</a>
 					</div>
