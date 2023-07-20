@@ -1,48 +1,47 @@
 @use "../mixin" as *;
 
 .aborg {
-	background-image: url(/assets/img/abbg.webp);
-	background-size: 100% 100%;
-	background-position: center;
-	background-repeat: no-repeat;
-	padding: 132px 0;
-	@include sm {
-		padding: 40px 0;
-		background-size: cover;
-	}
+  background-image: url(./img/common/abbg.webp);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 132px 0;
+  @include sm {
+    padding: 40px 0;
+    background-size: cover;
+  }
 
-	&__title {
-		font-size: 20px;
-		font-weight: bold;
-		background-image: url(/assets/img/aborg_title.svg);
-		background-color: $white;
-		background-size: 100% 100%;
-		background-repeat: no-repeat;
-		padding: 40px;
-		@include sm {
-			background-size: auto 100%;
-			background-position: 60% 0;
-		}
-	}
+  &__title {
+    font-size: 20px;
+    font-weight: bold;
+    background-image: url(./img/common/aborg_title.svg);
+    background-color: $white;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 40px;
+    @include sm {
+      background-size: auto 100%;
+      background-position: 60% 0;
+    }
+  }
 
-	&__box {
-		padding: 40px;
-		background-color: rgba(255,255,255,0.9);
-		@include sm {
-			padding: 20px;
-		}
+  &__box {
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.9);
+    @include sm {
+      padding: 20px;
+    }
 
-		h3 {
-			font-size: 20px;
-			font-weight: bold;
-			margin-top: 20px;
-		}
-	}
+    h3 {
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+  }
 
-	&__btn {
-		margin-top: 30px;
-		width: 100%;
-		max-width: 280px;
-	}
-
+  &__btn {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 280px;
+  }
 }

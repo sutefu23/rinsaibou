@@ -10,7 +10,7 @@
 		</nav>
 	</div>
 	<div class="footer__img">
-		<img src="/assets/img/footer.svg" alt="製材のイメージ>
+		<img src="<?= IMG ?>/footer.svg" alt="製材のイメージ>
 		</div>
 		<div class=" footer__bar">
 		<div class="container">

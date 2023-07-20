@@ -1,58 +1,59 @@
 @use "../mixin" as *;
 
 .abtop {
-	&__title {
-		background-image: url(/assets/img/abtop.svg), url(/assets/img/abtop_bg.webp);
-		background-size: cover;
-		font-size: 24px;
-		font-weight: bold;
-		padding: 72px 0;
-		@include md {
-			background-position: 60% 0;
-		}
-		@include sm {
-			background-position: 60% 0%;
-			padding: 40px 0;
-		}
+  &__title {
+    background-image: url(./img/common/abtop.svg),
+      url(./img/common/abtop_bg.webp);
+    background-size: cover;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 72px 0;
+    @include md {
+      background-position: 60% 0;
+    }
+    @include sm {
+      background-position: 60% 0%;
+      padding: 40px 0;
+    }
 
-		h1 {
-			&::before {
-				content: "";
-				display: inline-block;
-				width: 24px;
-				height: 24px;
-				background-image: url(/assets/img/icon_about-h.svg);
-				background-size: contain;
-				background-repeat: no-repeat;
-				margin-top: 4px;
-				margin-right: 10px;
-				margin-bottom: -2px;
-			}
-		}
-	}
+    h1 {
+      &::before {
+        content: "";
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background-image: url(./img/common/icon_about-h.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: 4px;
+        margin-right: 10px;
+        margin-bottom: -2px;
+      }
+    }
+  }
 
-	&__box {
-		padding: 40px 0;
-		background-image: url(/assets/img/ab_logo.svg);
-		background-size: 240px auto;
-		background-position: center 40px;
-		background-repeat: no-repeat;
-		@include sm {
-			background-position: center 100px;
-		}
-	}
+  &__box {
+    padding: 40px 0;
+    background-image: url(./img/common/ab_logo.svg);
+    background-size: 240px auto;
+    background-position: center 40px;
+    background-repeat: no-repeat;
+    @include sm {
+      background-position: center 100px;
+    }
+  }
 
-	&__imgs {
-		display: flex;
-		justify-content: space-between;
-		gap: 40px;
-		margin-top: 60px;
-		@include sm {
-			gap: 10px;
-		}
-	}
+  &__imgs {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 60px;
+    @include sm {
+      gap: 10px;
+    }
+  }
 
-	&__img {
-		max-width: 272px;
-	}
+  &__img {
+    max-width: 272px;
+  }
 }

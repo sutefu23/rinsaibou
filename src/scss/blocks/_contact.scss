@@ -1,161 +1,167 @@
 @use "../mixin" as *;
 
 .contact {
-	&__title {
-		position: relative;
-		padding: 60px 0;
-		background-image: url(/assets/img/contitle_bg.webp);
-		background-repeat: no-repeat;
-		background-size: 80% auto;
-		background-position: 0% 50%;
-		@include sm {
-			background-size: cover;
-			overflow: hidden;
-		}
+  &__title {
+    position: relative;
+    padding: 60px 0;
+    background-image: url(./img/common/contitle_bg.webp);
+    background-repeat: no-repeat;
+    background-size: 80% auto;
+    background-position: 0% 50%;
+    @include sm {
+      background-size: cover;
+      overflow: hidden;
+    }
 
-		h1 {
-			padding: 10px 40px;
-			background-image: url(/assets/img/contitle_bg-w.svg);
-			background-size: 100% 100%;
-			max-width: 420px;
-			margin-right: auto;
-			font-size: 24px;
-			font-weight: bold;
-			position: relative;
-			z-index: 4;
-		}
-	}
+    h1 {
+      padding: 10px 40px;
+      background-image: url(./img/common/contitle_bg-w.svg);
+      background-size: 100% 100%;
+      max-width: 420px;
+      margin-right: auto;
+      font-size: 24px;
+      font-weight: bold;
+      position: relative;
+      z-index: 4;
+    }
+  }
 
-	&__titleimg {
-		position: absolute;
-		top: 0;
-		bottom: -1px;
-		right: 0;
-		width: 30%;
-		@include sm {
-			height: 50%;
-			top: inherit;
-			bottom: -1px;
-			width: auto;
-			right: 0%;
-			opacity: 0.9;
-		}
+  &__titleimg {
+    position: absolute;
+    top: 0;
+    bottom: -1px;
+    right: 0;
+    width: 30%;
+    @include sm {
+      height: 50%;
+      top: inherit;
+      bottom: -1px;
+      width: auto;
+      right: 0%;
+      opacity: 0.9;
+    }
 
-		img {
-			height: 100%;
-		}
-	}
+    img {
+      height: 100%;
+    }
+  }
 
-	&__body {
-		position: relative;
-		z-index: -4;
-		padding: 80px 0;
-		background: linear-gradient(135deg,rgba(243,223,216,0.3) 10%, $white,rgba(234,251,240,0.3) 90%);
-		@include sm {
-			padding-bottom: 110px;
-		}
-		form {
-			width: 100%;
-			padding: 100px 40px;
-			background-color: $baige;
-			position: relative;
-			border-radius: 10px;
-			@include sm {
-				padding: 10px 20px 40px;
-			}
-		}
-	}
+  &__body {
+    position: relative;
+    z-index: -4;
+    padding: 80px 0;
+    background: linear-gradient(
+      135deg,
+      rgba(243, 223, 216, 0.3) 10%,
+      $white,
+      rgba(234, 251, 240, 0.3) 90%
+    );
+    @include sm {
+      padding-bottom: 110px;
+    }
+    form {
+      width: 100%;
+      padding: 100px 40px;
+      background-color: $baige;
+      position: relative;
+      border-radius: 10px;
+      @include sm {
+        padding: 10px 20px 40px;
+      }
+    }
+  }
 
-	&__content {
-		display: flex;
-		align-items: flex-start;
-		margin-top: 40px;
-		@include sm {
-			flex-direction: column;
-			gap: 10px;
-		}
+  &__content {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 40px;
+    @include sm {
+      flex-direction: column;
+      gap: 10px;
+    }
 
-		label {
-			min-width: 220px;
-			flex: none;
-		}
+    label {
+      min-width: 220px;
+      flex: none;
+    }
 
-		textarea, input {
-			width: 100%;
-			border: none;
-		}
+    textarea,
+    input {
+      width: 100%;
+      border: none;
+    }
 
-		input {
-			height: 24px;
-		}
+    input {
+      height: 24px;
+    }
 
-		span {
-			color: $white;
-			background-color: $gr_main;
-			padding: 2px 4px;
-			margin-left: 20px;
-		}
-	}
+    span {
+      color: $white;
+      background-color: $gr_main;
+      padding: 2px 4px;
+      margin-left: 20px;
+    }
+  }
 
-	&__btn {
-		margin-top: 40px;
-		max-width: 240px;
-		margin-left: auto;
-		margin-right: auto;
-	}
+  &__btn {
+    margin-top: 40px;
+    max-width: 240px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-	&__img {
-		position: absolute;
-		z-index: -1;
+  &__img {
+    position: absolute;
+    z-index: -1;
 
-		&.-one {
-			max-width: 300px;
-			top: 40px;
-			left: 40px;
-			@include sm {
-				max-width: 100px;
-				top: 20px;
-				left: 10px;
-			}
-			img {
-				border-radius: 30px;
-			}
-		}
+    &.-one {
+      max-width: 300px;
+      top: 40px;
+      left: 40px;
+      @include sm {
+        max-width: 100px;
+        top: 20px;
+        left: 10px;
+      }
+      img {
+        border-radius: 30px;
+      }
+    }
 
-		&.-two {
-			max-width: 400px;
-			top: 90px;
-			right: 0px;
-			z-index: -2;
-			@include sm {
-				top: 0;
-				max-width: 200px;
-			}
-		}
+    &.-two {
+      max-width: 400px;
+      top: 90px;
+      right: 0px;
+      z-index: -2;
+      @include sm {
+        top: 0;
+        max-width: 200px;
+      }
+    }
 
-		&.-three {
-			max-width: 240px;
-			bottom: 40px;
-			left: 0px;
-			z-index: -2;
-			@include sm {
-				bottom: 20px;
-				max-width: 100px;
-			}
-		}
+    &.-three {
+      max-width: 240px;
+      bottom: 40px;
+      left: 0px;
+      z-index: -2;
+      @include sm {
+        bottom: 20px;
+        max-width: 100px;
+      }
+    }
 
-		&.-four {
-			max-width: 200px;
-			bottom: 40px;
-			right: 40px;
-			@include sm {
-				max-width: 100px;
-				bottom: 20px;
-				right: 10px;
-			}
-			img {
-				border-radius: 30px;
-			}
-		}
-	}
+    &.-four {
+      max-width: 200px;
+      bottom: 40px;
+      right: 40px;
+      @include sm {
+        max-width: 100px;
+        bottom: 20px;
+        right: 10px;
+      }
+      img {
+        border-radius: 30px;
+      }
+    }
+  }
 }

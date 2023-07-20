@@ -1,109 +1,107 @@
 @use "../mixin" as *;
 
 .infos {
+  &__title {
+    position: relative;
+    z-index: -1;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 60px 0;
+    background-image: url(./img/common/bg_moku1.svg);
+    overflow: hidden;
+    @include sm {
+      background-image: inherit;
+      background: linear-gradient(-190deg, $gr_white, $baige, $white);
+    }
+  }
 
-	&__title {
-		position: relative;
-		z-index: -1;
-		font-weight: bold;
-		font-size: 24px;
-		padding: 60px 0;
-		background-image: url(/assets/img/bg_moku1.svg);
-		overflow: hidden;
-		@include sm {
-			background-image: inherit;
-			background: linear-gradient(-190deg, $gr_white, $baige, $white);
-		}
-	}
+  &__img {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+    height: 110%;
+    @include sm {
+      max-width: 70%;
+      top: inherit;
+      height: auto;
+    }
+    img {
+      height: 100%;
+      @include sm {
+      }
+    }
+  }
 
-	&__img {
-		position: absolute;
-		z-index: -1;
-		right: 0;
-		bottom: 0;
-		height: 110%;
-		@include sm {
-			max-width: 70%;
-			top: inherit;
-			height: auto;
-		}
-		img {
-			height: 100%;
-			@include sm {
-			}
-		}
-	}
+  &__menu {
+    background-image: url(./img/common/infos_bg.webp);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding: 40px 0 300px;
+    @include sm {
+      padding-bottom: 100px;
+    }
+  }
 
-	&__menu {
-		background-image: url(/assets/img/infos_bg.webp);
-		background-size: 100% auto;
-		background-repeat: no-repeat;
-		background-position: bottom;
-		padding: 40px 0 300px;
-		@include sm {
-			padding-bottom: 100px;
-		}
-	}
+  &__item {
+    background-image: url(./img/common/info_item_bg.svg);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-color: $baige;
+    padding: 40px;
+    margin-top: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    @include sm {
+      padding: 20px;
+      margin-top: 30px;
+    }
 
-	&__item {
-		background-image: url(/assets/img/info_item_bg.svg);
-		background-repeat: no-repeat;
-		background-size: auto 100%;
-		background-color: $baige;
-		padding: 40px;
-		margin-top: 40px;
-		box-shadow: 0 0 10px rgba(0,0,0,0.25);
-		@include sm {
-			padding: 20px;
-			margin-top: 30px;
-		}
+    p {
+      margin-top: 40px;
+      @include sm {
+        margin-top: 20px;
+      }
+    }
+  }
 
-		p {
-			margin-top: 40px;
-			@include sm {
-				margin-top: 20px;
-			}
-		}
-	}
+  &__name {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    @include sm {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
 
-	&__name {
-		display: flex;
-		align-items: center;
-		gap: 20px;
-		@include sm {
-			flex-direction: column;
-			align-items: flex-start;
-			gap: 10px;
-		}
+    time {
+      color: $gr_main;
+      background-color: $gr_white;
+      padding: 0 10px;
+      flex: none;
+    }
 
+    h3 {
+      font-size: 20px;
+      font-weight: bold;
+      padding-right: 10%;
+    }
+  }
 
-		 time {
-			color: $gr_main;
-			background-color: $gr_white;
-			padding: 0 10px;
-			flex: none;
-		 }
+  &__nameimg {
+    margin-top: -30px;
+    @include sm {
+      margin-top: -10px;
+    }
+  }
 
-		 h3 {
-			font-size: 20px;
-			font-weight: bold;
-			padding-right: 10%;
-		 }
-	}
-
-	&__nameimg {
-		margin-top: -30px;
-		@include sm {
-			margin-top: -10px;
-		}
-	}
-
-	&__btn {
-		margin-top: 20px;
-		max-width: 260px;
-		margin-left: auto;
-		@include sm {
-			max-width: inherit;
-		}
-	}
+  &__btn {
+    margin-top: 20px;
+    max-width: 260px;
+    margin-left: auto;
+    @include sm {
+      max-width: inherit;
+    }
+  }
 }

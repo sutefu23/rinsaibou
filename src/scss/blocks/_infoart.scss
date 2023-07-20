@@ -1,106 +1,106 @@
 @use "../mixin" as *;
 
 .infoart {
-	position: relative;
-	@include sm {
-		background-image: url(/assets/img/infoart_left.webp);
-		padding: 40px 0;
-	}
+  position: relative;
+  @include sm {
+    background-image: url(./img/common/infoart_left.webp);
+    padding: 40px 0;
+  }
 
-	&__box {
-		position: relative;
-		z-index: 0;
-		background-image: url(/assets/img/bg_moku1.svg);
-		background-color: $white;
-		padding: 40px;
-		@include sm {
-			padding: 20px;
-		}
-	}
+  &__box {
+    position: relative;
+    z-index: 0;
+    background-image: url(./img/common/bg_moku1.svg);
+    background-color: $white;
+    padding: 40px;
+    @include sm {
+      padding: 20px;
+    }
+  }
 
-	&__title {
-		display: flex;
-		align-items: center;
-		gap: 20px;
-		padding-bottom: 40px;
-		border-bottom: 1px solid $gr_main;
-		@include sm {
-			flex-direction: column;
-			align-items: flex-start;
-			gap: 10px;
-			padding-bottom: 20px;
-		}
+  &__title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid $gr_main;
+    @include sm {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      padding-bottom: 20px;
+    }
 
-		time {
-			font-size: 20px;
-			font-weight: bold;
-			color: $gr_main;
-			@include sm {
-				font-size: 16px;
-			}
-		}
-		h1 {
-			font-weight: bold;
-			font-size: 24px;
-		}
-	}
+    time {
+      font-size: 20px;
+      font-weight: bold;
+      color: $gr_main;
+      @include sm {
+        font-size: 16px;
+      }
+    }
+    h1 {
+      font-weight: bold;
+      font-size: 24px;
+    }
+  }
 
-	&__content {
-		margin-top: 40px;
-		padding: 20px;
-		background-color: $white;
-		box-shadow: 0 0 4px rgba(0,0,0,0.25);
-		@include sm {
-			margin-top: 20px;
-			padding: 10px;
-		}
-	}
+  &__content {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: $white;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+    @include sm {
+      margin-top: 20px;
+      padding: 10px;
+    }
+  }
 
-	&__btn {
-		margin-top: 40px;
-		max-width: 280px;
-		margin-left: auto;
-		margin-right: auto;
-		@include sm {
-			max-width: inherit;
-			margin-top: 20px;
-		}
-	}
+  &__btn {
+    margin-top: 40px;
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    @include sm {
+      max-width: inherit;
+      margin-top: 20px;
+    }
+  }
 
-	&__car {
-		position: absolute;
-		bottom: 0;
-		max-width: 250px;
-		width: calc(50% - 200px);
-		@include sm {
-			position: inherit;
-			width: 200px;
-			margin-top: 40px;
-		}
-	}
+  &__car {
+    position: absolute;
+    bottom: 0;
+    max-width: 250px;
+    width: calc(50% - 200px);
+    @include sm {
+      position: inherit;
+      width: 200px;
+      margin-top: 40px;
+    }
+  }
 
-	&__img {
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		background-repeat: repeat-y;
-		width: calc(50vw - 500px);
-		height: 100%;
-		background-size: 100% auto;
-		z-index: -1;
-		@include md {
-			width: 40px;
-			background-size: 400% auto;
-		}
-		@include sm {
-			display: none;
-		}
-		&.-left {
-			background-image: url(/assets/img/infoart_left.webp);
-		}
-		&.-right {
-			background-image: url(/assets/img/infoart_right.webp);
-			right: 0;
-		}
-	}
+  &__img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-repeat: repeat-y;
+    width: calc(50vw - 500px);
+    height: 100%;
+    background-size: 100% auto;
+    z-index: -1;
+    @include md {
+      width: 40px;
+      background-size: 400% auto;
+    }
+    @include sm {
+      display: none;
+    }
+    &.-left {
+      background-image: url(./img/common/infoart_left.webp);
+    }
+    &.-right {
+      background-image: url(./img/common/infoart_right.webp);
+      right: 0;
+    }
+  }
 }

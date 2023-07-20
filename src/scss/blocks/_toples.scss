@@ -1,52 +1,53 @@
 @use "../mixin" as *;
 
 .toples {
-	padding-top: 80px;
-	padding-bottom: 120px;
-	background-image: url(/assets/img/top_lesbg2.webp),url(/assets/img/top_lesbg1.svg);
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	background-color: $gr_white;
-	@include lg_down {
-		padding-top: 40px;
-		padding-bottom: 40px;
-		background-size: auto 100%;
-	}
-	@include sm {
-		background-size: auto 800px;
-	}
+  padding-top: 80px;
+  padding-bottom: 120px;
+  background-image: url(./img/common/top_lesbg2.webp),
+    url(./img/common/top_lesbg1.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: $gr_white;
+  @include lg_down {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-size: auto 100%;
+  }
+  @include sm {
+    background-size: auto 800px;
+  }
 
-	&__contents {
-		padding: 30px;
-		background-color: $white;
-		box-shadow: 0px 0px 4px rgba(0,0,0,0.25);
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		gap: 20px;
-		background-image: url(/assets/img/top_lesbg.webp);
-		background-size: auto 120%;
-		background-repeat: no-repeat;
-		background-position: 100% 100%;
-		@include sm {
-			flex-direction: column;
-			justify-content: flex-start;
-			align-items: flex-start;
-			padding: 20px;
-			background-size: 100% auto;
-		}
-	}
+  &__contents {
+    padding: 30px;
+    background-color: $white;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    background-image: url(./img/common/top_lesbg.webp);
+    background-size: auto 120%;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    @include sm {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 20px;
+      background-size: 100% auto;
+    }
+  }
 
-	&__left {
-		flex: none;
-		ul {
-			margin: 20px 0;
-			padding-left: 1em;
-			list-style: inherit;
-		}
-	}
+  &__left {
+    flex: none;
+    ul {
+      margin: 20px 0;
+      padding-left: 1em;
+      list-style: inherit;
+    }
+  }
 
-	&__btn {
-		margin-top: 40px;
-	}
+  &__btn {
+    margin-top: 40px;
+  }
 }

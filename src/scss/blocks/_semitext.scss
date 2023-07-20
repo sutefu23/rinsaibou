@@ -1,56 +1,56 @@
 @use "../mixin" as *;
 
 .semitext {
-	position: relative;
+  position: relative;
   background: radial-gradient($gr_white 50%, $white);
-	background-position: 50% 0;
-	padding-top: 40px;
-	padding-bottom: 40px;
-	z-index: 2;
+  background-position: 50% 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  z-index: 2;
 
-	p {
-		padding: 30px;
-		background-color: rgba(255,255,255,0.9);
-		@include sm {
-			padding: 20px;
-		}
+  p {
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    @include sm {
+      padding: 20px;
+    }
 
-		&::before {
-			content: "";
-			position: absolute;
-			background-image: url(/assets/img/semite1.webp);
-			background-size: contain;
-			width: 200px;
-			height: 200px;
-			border-radius: 50%;
-			z-index: -1;
-			left: 30px;
-			top: 0;
-			@include sm {
-				width: 100px;
-				height: 100px;
-				left: 0px;
-				top: 20px;
-			}
-		}
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url(./img/common/semite1.webp);
+      background-size: contain;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      z-index: -1;
+      left: 30px;
+      top: 0;
+      @include sm {
+        width: 100px;
+        height: 100px;
+        left: 0px;
+        top: 20px;
+      }
+    }
 
-		&::after {
-			content: "";
-			position: absolute;
-			background-image: url(/assets/img/semite2.webp);
-			background-size: contain;
-			width: 200px;
-			height: 200px;
-			border-radius: 50%;
-			z-index: -1;
-			right: 30px;
-			bottom: 0;
-			@include sm {
-				width: 100px;
-				height: 100px;
-				right: 0px;
-				bottom: 20px;
-			}
-		}
-	}
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url(./img/common/semite2.webp);
+      background-size: contain;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      z-index: -1;
+      right: 30px;
+      bottom: 0;
+      @include sm {
+        width: 100px;
+        height: 100px;
+        right: 0px;
+        bottom: 20px;
+      }
+    }
+  }
 }

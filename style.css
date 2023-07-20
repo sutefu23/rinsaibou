@@ -187,7 +187,7 @@ ul {
 }
 
 .aborg {
-  background-image: url(/assets/img/abbg.webp);
+  background-image: url(./img/common/abbg.webp);
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -202,7 +202,7 @@ ul {
 .aborg__title {
   font-size: 20px;
   font-weight: bold;
-  background-image: url(/assets/img/aborg_title.svg);
+  background-image: url(./img/common/aborg_title.svg);
   background-color: #fff;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -235,7 +235,7 @@ ul {
 }
 
 .abtop__title {
-  background-image: url(/assets/img/abtop.svg), url(/assets/img/abtop_bg.webp);
+  background-image: url(./img/common/abtop.svg), url(./img/common/abtop_bg.webp);
   background-size: cover;
   font-size: 24px;
   font-weight: bold;
@@ -257,7 +257,7 @@ ul {
   display: inline-block;
   width: 24px;
   height: 24px;
-  background-image: url(/assets/img/icon_about-h.svg);
+  background-image: url(./img/common/icon_about-h.svg);
   background-size: contain;
   background-repeat: no-repeat;
   margin-top: 4px;
@@ -266,7 +266,7 @@ ul {
 }
 .abtop__box {
   padding: 40px 0;
-  background-image: url(/assets/img/ab_logo.svg);
+  background-image: url(./img/common/ab_logo.svg);
   background-size: 240px auto;
   background-position: center 40px;
   background-repeat: no-repeat;
@@ -327,7 +327,7 @@ ul {
   content: "";
   width: 18px;
   height: 18px;
-  background-image: url(/assets/img/icon_tel.svg);
+  background-image: url(./img/common/icon_tel.svg);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -350,7 +350,7 @@ ul {
   content: "";
   width: 25px;
   height: 25px;
-  background-image: url(/assets/img/icon_tel-w.svg);
+  background-image: url(./img/common/icon_tel-w.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -387,7 +387,7 @@ ul {
 .contact__title {
   position: relative;
   padding: 60px 0;
-  background-image: url(/assets/img/contitle_bg.webp);
+  background-image: url(./img/common/contitle_bg.webp);
   background-repeat: no-repeat;
   background-size: 80% auto;
   background-position: 0% 50%;
@@ -400,7 +400,7 @@ ul {
 }
 .contact__title h1 {
   padding: 10px 40px;
-  background-image: url(/assets/img/contitle_bg-w.svg);
+  background-image: url(./img/common/contitle_bg-w.svg);
   background-size: 100% 100%;
   max-width: 420px;
   margin-right: auto;
@@ -467,7 +467,8 @@ ul {
   min-width: 220px;
   flex: none;
 }
-.contact__content textarea, .contact__content input {
+.contact__content textarea,
+.contact__content input {
   width: 100%;
   border: none;
 }
@@ -602,7 +603,7 @@ ul {
 }
 
 .footer {
-  background-image: url(/assets/img/footer.webp);
+  background-image: url(./img/common/footer.webp);
   color: #fff;
   padding-top: 40px;
   background-position: center;
@@ -708,13 +709,13 @@ ul {
 }
 
 .header {
-  background-image: url(/assets/img/bg_moku1.svg);
+  background-image: url(./img/common/bg_moku1.svg);
   background-size: 100% 30px;
 }
 .header__first {
   padding-top: 20px;
   padding-bottom: 15px;
-  background-image: url(/assets/img/header__trees1.svg);
+  background-image: url(./img/common/header__trees1.svg);
   background-color: #f8efea;
   background-repeat: no-repeat;
   background-size: 120px;
@@ -791,7 +792,7 @@ ul {
 .header__nav::before {
   content: "";
   position: absolute;
-  background-image: url(/assets/img/header__trees2.svg);
+  background-image: url(./img/common/header__trees2.svg);
   width: 148px;
   height: 50px;
   top: 1px;
@@ -801,7 +802,7 @@ ul {
 .header__nav::after {
   content: "";
   position: absolute;
-  background-image: url(/assets/img/header__trees2.svg);
+  background-image: url(./img/common/header__trees2.svg);
   width: 148px;
   height: 50px;
   top: 1px;
@@ -813,16 +814,16 @@ ul {
   justify-content: space-between;
 }
 .header__list li:first-child a::before {
-  background-image: url(/assets/img/icon_home-h.svg);
+  background-image: url(./img/common/icon_home-h.svg);
 }
 .header__list li:nth-child(3) a::before {
-  background-image: url(/assets/img/icon_semi-h.svg);
+  background-image: url(./img/common/icon_semi-h.svg);
 }
 .header__list li:nth-child(4) a::before {
-  background-image: url(/assets/img/icon_info-h.svg);
+  background-image: url(./img/common/icon_info-h.svg);
 }
 .header__list li:last-child a::before {
-  background-image: url(/assets/img/icon_mail-h.svg);
+  background-image: url(./img/common/icon_mail-h.svg);
 }
 .header__link {
   display: flex;
@@ -845,7 +846,7 @@ ul {
 }
 .header__link::before {
   content: "";
-  background-image: url(/assets/img/icon_about-h.svg);
+  background-image: url(./img/common/icon_about-h.svg);
   width: 20px;
   height: 20px;
   background-size: contain;
@@ -918,14 +919,14 @@ ul {
 }
 @media screen and (max-width: 767px) {
   .infoart {
-    background-image: url(/assets/img/infoart_left.webp);
+    background-image: url(./img/common/infoart_left.webp);
     padding: 40px 0;
   }
 }
 .infoart__box {
   position: relative;
   z-index: 0;
-  background-image: url(/assets/img/bg_moku1.svg);
+  background-image: url(./img/common/bg_moku1.svg);
   background-color: #fff;
   padding: 40px;
 }
@@ -1022,10 +1023,10 @@ ul {
   }
 }
 .infoart__img.-left {
-  background-image: url(/assets/img/infoart_left.webp);
+  background-image: url(./img/common/infoart_left.webp);
 }
 .infoart__img.-right {
-  background-image: url(/assets/img/infoart_right.webp);
+  background-image: url(./img/common/infoart_right.webp);
   right: 0;
 }
 
@@ -1035,7 +1036,7 @@ ul {
   font-weight: bold;
   font-size: 24px;
   padding: 60px 0;
-  background-image: url(/assets/img/bg_moku1.svg);
+  background-image: url(./img/common/bg_moku1.svg);
   overflow: hidden;
 }
 @media screen and (max-width: 767px) {
@@ -1062,7 +1063,7 @@ ul {
   height: 100%;
 }
 .infos__menu {
-  background-image: url(/assets/img/infos_bg.webp);
+  background-image: url(./img/common/infos_bg.webp);
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -1074,7 +1075,7 @@ ul {
   }
 }
 .infos__item {
-  background-image: url(/assets/img/info_item_bg.svg);
+  background-image: url(./img/common/info_item_bg.svg);
   background-repeat: no-repeat;
   background-size: auto 100%;
   background-color: #f8efea;
@@ -1152,7 +1153,7 @@ ul {
 .low h2::before {
   content: "";
   display: inline-block;
-  background-image: url(/assets/img/icon_book.svg);
+  background-image: url(./img/common/icon_book.svg);
   background-repeat: no-repeat;
   width: 40px;
   height: 24px;
@@ -1164,7 +1165,7 @@ ul {
   justify-content: space-between;
   align-items: center;
   gap: 40px;
-  background-image: url(/assets/img/icon_low-w.svg);
+  background-image: url(./img/common/icon_low-w.svg);
   background-position: 60px 100%;
   background-repeat: no-repeat;
   background-size: 200px auto;
@@ -1315,7 +1316,7 @@ ul {
     content: "";
     width: 100%;
     height: 100vh;
-    background-image: url(/assets/img/semiart_bg-sp.webp);
+    background-image: url(./img/common/semiart_bg-sp.webp);
     top: 0;
     position: fixed;
     background-size: 100% auto;
@@ -1380,7 +1381,7 @@ ul {
   }
 }
 .semiart__body {
-  background-image: url(/assets/img/semiart_bg.webp);
+  background-image: url(./img/common/semiart_bg.webp);
   background-size: 100% auto;
   background-repeat: repeat-y;
   background-attachment: fixed;
@@ -1406,7 +1407,7 @@ ul {
 
 .seminors {
   position: relative;
-  background-image: url(/assets/img/bg_moku1.svg);
+  background-image: url(./img/common/bg_moku1.svg);
   background-size: 100% 70px;
 }
 .seminors__img {
@@ -1471,19 +1472,19 @@ ul {
 .seminors__text {
   width: 100%;
   padding: 30px;
-  background-image: url(/assets/img/semibg1.svg);
+  background-image: url(./img/common/semibg1.svg);
   background-repeat: no-repeat;
   background-position: right;
   background-size: auto 100%;
 }
 .seminors__text.-two {
-  background-image: url(/assets/img/semibg2.svg);
+  background-image: url(./img/common/semibg2.svg);
 }
 .seminors__text.-three {
-  background-image: url(/assets/img/semibg3.svg);
+  background-image: url(./img/common/semibg3.svg);
 }
 .seminors__text.-four {
-  background-image: url(/assets/img/semibg4.svg);
+  background-image: url(./img/common/semibg4.svg);
 }
 .seminors__text h3 {
   font-size: 20px;
@@ -1523,7 +1524,7 @@ ul {
 .semitext p::before {
   content: "";
   position: absolute;
-  background-image: url(/assets/img/semite1.webp);
+  background-image: url(./img/common/semite1.webp);
   background-size: contain;
   width: 200px;
   height: 200px;
@@ -1543,7 +1544,7 @@ ul {
 .semitext p::after {
   content: "";
   position: absolute;
-  background-image: url(/assets/img/semite2.webp);
+  background-image: url(./img/common/semite2.webp);
   background-size: contain;
   width: 200px;
   height: 200px;
@@ -1562,7 +1563,7 @@ ul {
 }
 
 .semitop {
-  background-image: url(/assets/img/semitop_bg.webp);
+  background-image: url(./img/common/semitop_bg.webp);
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 140px;
@@ -1682,7 +1683,7 @@ ul {
   text-align: center;
   font-size: 32px;
   font-weight: bold;
-  background-image: url(/assets/img/top.webp);
+  background-image: url(./img/common/top.webp);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -1707,7 +1708,7 @@ ul {
 .toples {
   padding-top: 80px;
   padding-bottom: 120px;
-  background-image: url(/assets/img/top_lesbg2.webp), url(/assets/img/top_lesbg1.svg);
+  background-image: url(./img/common/top_lesbg2.webp), url(./img/common/top_lesbg1.svg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-color: #eafbf0;
@@ -1732,7 +1733,7 @@ ul {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  background-image: url(/assets/img/top_lesbg.webp);
+  background-image: url(./img/common/top_lesbg.webp);
   background-size: auto 120%;
   background-repeat: no-repeat;
   background-position: 100% 100%;
@@ -1874,7 +1875,7 @@ ul {
 }
 .toptext p {
   padding: 40px;
-  background-image: url(/assets/img/top_textbg1.svg);
+  background-image: url(./img/common/top_textbg1.svg);
 }
 @media screen and (max-width: 767px) {
   .toptext p {
@@ -1902,7 +1903,7 @@ ul {
 }
 
 .toptitle {
-  background-image: url(/assets/img/toptitle_bg.svg);
+  background-image: url(./img/common/toptitle_bg.svg);
   display: flex;
   align-items: center;
   padding: 10px 30px;

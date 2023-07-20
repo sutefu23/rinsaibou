@@ -1,24 +1,24 @@
 @use "../mixin" as *;
 
 .top {
-	padding-top: 40px;
-	text-align: center;
-	font-size: 32px;
-	font-weight: bold;
-	background-image: url(/assets/img/top.webp);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: bottom;
-	height: 700px;
-	@include md {
-		height: 600px;
-	}
-	@include sm {
-		padding-top: 20px;
-		height: 270px;
-		font-size: 20px;
-	}
-	h2 {
-		text-shadow: $white 0px 0px 4px;
-	}
+  padding-top: 40px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  background-image: url(./img/common/top.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 700px;
+  @include md {
+    height: 600px;
+  }
+  @include sm {
+    padding-top: 20px;
+    height: 270px;
+    font-size: 20px;
+  }
+  h2 {
+    text-shadow: $white 0px 0px 4px;
+  }
 }
