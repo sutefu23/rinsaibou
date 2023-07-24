@@ -171,6 +171,9 @@
     text-decoration: none;
     border-radius: 10px;
     font-size: 18px;
+    &:hover {
+      background-color: $gr_white;
+    }
     @include lg {
       width: 160px;
       padding: 0;

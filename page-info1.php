@@ -31,6 +31,9 @@ get_header();
 					<div class="infoart__car">
 						<img src="<?= IMG ?>/common/infoart_car.webp" alt="林業機械" class="infoart__carimg">
 					</div>
+					<div class="u-hidden-sp">
+						<img src="<?= IMG ?>/common/info_name.svg" alt="木のイメージ">
+					</div>
 				</section>
 			</article>
 		</div>

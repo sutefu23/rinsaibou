@@ -19,6 +19,12 @@
   border: none;
   border-radius: 50px;
   width: 100%;
+  transition: all 0.3s ease-out;
+
+  &:hover {
+    background-color: $gr_light;
+    transition: all 0.3s ease-out;
+  }
 
   &.-header {
     padding: 4px 16px;
@@ -80,6 +86,9 @@
     border: 1px solid $gr_main;
     color: $gr_main;
     background-color: transparent;
+    &:hover {
+      background-color: $white;
+    }
   }
 
   &.-apply {
@@ -91,5 +100,8 @@
     border-radius: 10px;
     border: 1px solid $gr_main;
     color: $gr_main;
+    &:hover {
+      background-color: $white;
+    }
   }
 }

@@ -314,6 +314,11 @@ ul {
   border: none;
   border-radius: 50px;
   width: 100%;
+  transition: all 0.3s ease-out;
+}
+.btn:hover {
+  background-color: #09a33f;
+  transition: all 0.3s ease-out;
 }
 .btn.-header {
   padding: 4px 16px;
@@ -376,6 +381,9 @@ ul {
   color: #1c9045;
   background-color: transparent;
 }
+.btn.-info:hover {
+  background-color: #fff;
+}
 .btn.-apply {
   border-radius: 10px;
 }
@@ -384,6 +392,9 @@ ul {
   border-radius: 10px;
   border: 1px solid #1c9045;
   color: #1c9045;
+}
+.btn.-content:hover {
+  background-color: #fff;
 }
 
 .contact__title {
@@ -416,7 +427,8 @@ ul {
   top: 0;
   bottom: -1px;
   right: 0;
-  width: 30%;
+  width: 40%;
+  height: 100%;
 }
 @media screen and (max-width: 767px) {
   .contact__titleimg {
@@ -430,10 +442,14 @@ ul {
 }
 .contact__titleimg img {
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: left;
+     object-position: left;
 }
 .contact__body {
   position: relative;
-  z-index: -4;
+  z-index: 0;
   padding: 80px 0;
   background: linear-gradient(135deg, rgba(243, 223, 216, 0.3) 10%, #fff, rgba(234, 251, 240, 0.3) 90%);
 }
@@ -862,6 +878,9 @@ ul {
   border-radius: 10px;
   font-size: 18px;
 }
+.header__link:hover {
+  background-color: #eafbf0;
+}
 @media screen and (min-width: 1080px) {
   .header__link {
     width: 160px;
@@ -919,6 +938,9 @@ ul {
 .info__list a {
   color: #000;
   text-decoration: none;
+}
+.info__list a:hover {
+  opacity: 0.7;
 }
 .info__bgimgs {
   display: flex;
@@ -1014,7 +1036,7 @@ ul {
 }
 .infoart__car {
   position: absolute;
-  bottom: 0;
+  bottom: 50px;
   max-width: 250px;
   width: calc(50% - 200px);
 }
@@ -1023,6 +1045,7 @@ ul {
     position: inherit;
     width: 200px;
     margin-top: 40px;
+    bottom: 0;
   }
 }
 .infoart__img {
@@ -1899,11 +1922,12 @@ ul {
 }
 .toptext p {
   padding: 40px;
-  background-image: url(./img/common/top_textbg1.svg);
+  background: linear-gradient(#fff, rgba(255, 255, 255, 0)), url(./img/common/top_textbg1.svg);
 }
 @media screen and (max-width: 767px) {
   .toptext p {
     padding: 20px 0;
+    background-position: bottom right;
   }
 }
 .toptext__right {

@@ -69,13 +69,14 @@
 
   &__car {
     position: absolute;
-    bottom: 0;
+    bottom: 50px;
     max-width: 250px;
     width: calc(50% - 200px);
     @include sm {
       position: inherit;
       width: 200px;
       margin-top: 40px;
+      bottom: 0;
     }
   }
 

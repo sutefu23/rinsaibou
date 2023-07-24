@@ -26,9 +26,11 @@
 
   p {
     padding: 40px;
-    background-image: url(./img/common/top_textbg1.svg);
+    background: linear-gradient($white, rgba(255, 255, 255, 0)),
+      url(./img/common/top_textbg1.svg);
     @include sm {
       padding: 20px 0;
+      background-position: bottom right;
     }
   }
 
