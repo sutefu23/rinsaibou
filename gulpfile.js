@@ -25,7 +25,7 @@ const isProduction = process.env.NODE_ENV === "production"
 // ローカルサーバー
 const serve = (cb) => {
   browserSync.init({
-    proxy: process.env.WP_URL ?? "ringyo-mokuzai.test",
+    proxy: process.env.WP_URL ?? "testringyou.local",
     ghostMode: false,
     files: [path.php, path.js.dest, path.img],
   })

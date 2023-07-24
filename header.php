@@ -17,7 +17,9 @@
 					<div class="header__logo">
 						<a href="/"><img src="<?= IMG ?>/common/logo.svg" alt="ヘッダーロゴ" /></a>
 					</div>
-					<a href="#">林業・木材製造業労働災害防止協会　<span class="u-inline-block">福岡県支部</span></a>
+					<div class="header__name">
+						<a href="#"><span class="u-inline-block">林業・木材製造業労働災害防止協会</span>　<span class="u-inline-block">福岡県支部</span></a>
+					</div>
 				</div>
 				<div class="header__btn u-hidden-sp">
 					<a href="tel:0927142061" class="btn -header"><span class="u-hidden-sp">092-714-2061</span></a>
