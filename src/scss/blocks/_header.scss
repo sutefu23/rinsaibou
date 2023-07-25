@@ -39,7 +39,7 @@
     gap: 15px;
     align-items: center;
     @include sm {
-      gap: 5px;
+      gap: 2px;
       width: 100%;
     }
   }
@@ -47,6 +47,7 @@
   &__logo {
     img {
       width: 40px;
+      height: 40px;
     }
   }
 

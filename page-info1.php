@@ -23,10 +23,10 @@ get_header();
 							そうしてその穴の中から時々ぷうぷ</p>
 					</div>
 					<div class="infoart__btn">
-						<a href="#" class="btn -info">お知らせ一覧に戻る ></a>
+						<a href="#" class="btn -info -arrow">お知らせ一覧に戻る</a>
 					</div>
 					<div class="infoart__btn">
-						<a href="#" class="btn -info">TOPに戻る ></a>
+						<a href="#" class="btn -info -arrow">TOPに戻る</a>
 					</div>
 					<div class="infoart__car">
 						<img src="<?= IMG ?>/common/infoart_car.webp" alt="林業機械" class="infoart__carimg">

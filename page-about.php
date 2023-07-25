@@ -52,7 +52,7 @@ get_header();
 					福岡県支部は、福岡県支部では県内各地に１７の分会があり、会員数は１０９事業所（令和５年３月末現在）、団体会員が２団体となっています。
 				</p>
 				<div class="aborg__btn">
-					<a href="#" class="btn -flat">講習会の一覧と説明はこちら ></a>
+					<a href="#" class="btn -flat -arrow">講習会の一覧と説明はこちら</a>
 				</div>
 			</div>
 		</div>

@@ -25,7 +25,7 @@ get_header();
 						</div>
 						<p>吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。</p>
 						<div class="infos__btn">
-							<a href="/info1" class="btn">詳細 ></a>
+							<a href="/info1" class="btn -arrow">詳細</a>
 						</div>
 					</li>
 					<li class="infos__item">
@@ -38,7 +38,7 @@ get_header();
 						</div>
 						<p>吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。</p>
 						<div class="infos__btn">
-							<a href="/info1" class="btn">詳細 ></a>
+							<a href="/info1" class="btn -arrow">詳細</a>
 						</div>
 					</li>
 					<li class="infos__item">
@@ -51,7 +51,7 @@ get_header();
 						</div>
 						<p>吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。</p>
 						<div class="infos__btn">
-							<a href="/info1" class="btn">詳細 ></a>
+							<a href="/info1" class="btn -arrow">詳細</a>
 						</div>
 					</li>
 				</ul>

@@ -135,7 +135,7 @@ get_header();
 				</div>
 			</div>
 		</section>
-	</article>s
+	</article>
 </main>
 <?php
 get_footer();

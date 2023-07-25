@@ -72,7 +72,7 @@ get_header();
 					</ul>
 					<p>3つの講習を開催しています。</p>
 					<div class="toples__btn">
-						<a href="#" class="btn">講習会の案内と説明はこちら ></a>
+						<a href="#" class="btn -arrow">講習会の案内と説明はこちら</a>
 					</div>
 				</div>
 				<div class="toples__right">
@@ -198,8 +198,8 @@ get_header();
 						</tbody>
 					</table>
 					<div class="topsche__btn">
-						<a href="tel:0927142061" class="btn -topsche">
-							<p>電話で様式を申請する<span class="u-inline-block">方はこちら　＞</span></p>
+						<a href="tel:0927142061" class="btn -topsche -arrow">
+							<p>電話で様式を申請する<span class="u-inline-block">方はこちら</span></p>
 						</a>
 					</div>
 				</div>
