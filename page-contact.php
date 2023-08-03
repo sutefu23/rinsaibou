@@ -14,27 +14,7 @@ get_header();
 		</header>
 		<div class="contact__body">
 			<div class="container">
-				<form action="">
-					<div class="contact__content">
-						<label for="">お問い合わせ内容<span>必須</span></label>
-						<textarea name="" id="" cols="30" rows="10"></textarea>
-					</div>
-					<div class="contact__content">
-						<label for="">お名前<span>必須</span></label>
-						<input type="text">
-					</div>
-					<div class="contact__content">
-						<label for="">電話番号</label>
-						<input type="tel">
-					</div>
-					<div class="contact__content">
-						<label for="">メールアドレス</label>
-						<input type="email">
-					</div>
-					<div class="contact__btn">
-						<input type="submit" class="btn" value="確認">
-					</div>
-				</form>
+				<?= do_shortcode('[mwform_formkey key="23"]') ?>
 			</div>
 			<div class="contact__imgs">
 				<div class="contact__img -one">

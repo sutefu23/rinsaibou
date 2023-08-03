@@ -347,6 +347,11 @@ ul {
     height: 25px;
   }
 }
+.btn.-white {
+  border: 1px solid #1c9045;
+  color: #1c9045;
+  background-color: #fff;
+}
 .btn.-topsche {
   padding-left: 40px;
   display: flex;
@@ -507,11 +512,22 @@ ul {
 .contact__content input {
   height: 24px;
 }
+.contact__content input[type=number]::-webkit-outer-spin-button,
+.contact__content input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.contact__content input[type=number] {
+  -moz-appearance: textfield;
+}
 .contact__content span {
   color: #fff;
   background-color: #1c9045;
   padding: 2px 4px;
   margin-left: 20px;
+}
+.contact__content br {
+  display: none;
 }
 .contact__btn {
   margin-top: 40px;
@@ -576,6 +592,16 @@ ul {
 }
 .contact__img.-four img {
   border-radius: 30px;
+}
+.contact__confirm {
+  background-color: #f8efea;
+  width: 100%;
+  padding: 40px;
+}
+@media screen and (max-width: 767px) {
+  .contact__confirm {
+    padding: 20px;
+  }
 }
 
 .drawer {

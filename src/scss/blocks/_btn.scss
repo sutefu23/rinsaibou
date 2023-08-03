@@ -52,6 +52,12 @@
     }
   }
 
+  &.-white {
+    border: 1px solid $gr_main;
+    color: $gr_main;
+    background-color: $white;
+  }
+
   &.-topsche {
     padding-left: 40px;
     display: flex;

@@ -98,11 +98,25 @@
       height: 24px;
     }
 
+    input[type="number"]::-webkit-outer-spin-button,
+    input[type="number"]::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    input[type="number"] {
+      -moz-appearance: textfield;
+    }
+
     span {
       color: $white;
       background-color: $gr_main;
       padding: 2px 4px;
       margin-left: 20px;
+    }
+
+    br {
+      display: none;
     }
   }
 
@@ -165,6 +179,15 @@
       img {
         border-radius: 30px;
       }
+    }
+  }
+
+  &__confirm {
+    background-color: $baige;
+    width: 100%;
+    padding: 40px;
+    @include sm {
+      padding: 20px;
     }
   }
 }
