@@ -37,3 +37,25 @@ require TEMPLATE_PATH . '/inc/query-controller.php';
  * 抜粋の文字数・省略記号
  */
 require TEMPLATE_PATH . '/inc/excerpt.php';
+
+/**
+ * MW FORM のビジュアル無効化
+ */
+function visual_editor_off()
+{
+	global $typenow;
+	if (in_array($typenow, array('page', 'mw-wp-form'))) {
+		add_filter('user_can_richedit', 'off_visual_editor');
+	}
+}
+function off_visual_editor()
+{
+	return false;
+}
+add_action('load-post.php', 'visual_editor_off');
+add_action('load-post-new.php', 'visual_editor_off');
+
+
+/**
+ * カスタム投稿タイプの追加
+ */
