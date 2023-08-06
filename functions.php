@@ -80,17 +80,24 @@ function lc_create_post_type()
 	);
 	//register post type
 	register_post_type(
-		'event',
+		'seminars',
 		array(
 			'labels' => $labels,
 			'has_archive' => true,
 			'public' => true,
-			'supports' => array('title', 'editor', 'thumbnail', 'page-attributes'),
-			'taxonomies' => array('post_tag', 'category'),
+			'supports' => ['title'],
+			'taxonomies' => ['seminar-type'],
 			'exclude_from_search' => false,
 			'capability_type' => 'post',
-			'rewrite' => array('slug' => 'events'),
 		)
 	);
+	register_taxonomy('seminar-type', 'seminars', [
+		'label' => '講習会カテゴリー',
+		'hierarchical' => true,
+		'default_term' => [
+			'name' => 'その他',
+			'slug' => 'others',
+		],
+	]);
 }
 add_action('init', 'lc_create_post_type');
