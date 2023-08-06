@@ -20,46 +20,47 @@ get_header();
 			<img src="<?= IMG ?>/common/top_textbg2r.webp" alt="木のイメージ">
 		</div>
 	</section>
-	<section class="info">
-		<div class="container">
-			<div class="info__box">
-				<header class="toptitle">
-					<div class="toptitle__icon">
-						<img src="<?= IMG ?>/common/icon_info.svg" alt="お知らせ">
-					</div>
-					<h2>お知らせ</h2>
-				</header>
-				<ul class="info__list">
-					<li>
-						<time>2023年02月20日</time>
-						<a href="#">
-							<p>ｘ月△日の講習は台風の影響で延期となりました。</p>
-						</a>
-					</li>
-					<li>
-						<time>2022年12月10日</time>
-						<a href="#">
-							<p>根拠法令についての情報をアップデートしました。</p>
-						</a>
-					</li>
-					<li>
-						<time>2022年11月08日</time>
-						<a href="#">
-							<p>伐木等の業務特別教育受講お申し込み募集の終了について</p>
-						</a>
-					</li>
-				</ul>
+	<?php
+	$q = new WP_Query(['posts_per_page' => 3]);
+	if ($q->have_posts()) {
+	?>
+		<section class="info">
+			<div class="container">
+				<div class="info__box">
+					<header class="toptitle">
+						<div class="toptitle__icon">
+							<img src="<?= IMG ?>/common/icon_info.svg" alt="お知らせ">
+						</div>
+						<h2>お知らせ</h2>
+					</header>
+					<ul class="info__list">
+						<?php
+						while ($q->have_posts()) {
+							$q->the_post();
+						?>
+							<li>
+								<time><?php the_time('Y年m月d日'); ?></time>
+								<a href="<?php the_permalink(); ?>">
+									<p><?php the_title(); ?></p>
+								</a>
+							</li>
+						<?php } ?>
+					</ul>
+				</div>
 			</div>
-		</div>
-		<div class="info__bgimgs">
-			<div class="info__bgone">
-				<img src="<?= IMG ?>/common/info_bg1.svg" alt="草のイメージ">
+			<div class="info__bgimgs">
+				<div class="info__bgone">
+					<img src="<?= IMG ?>/common/info_bg1.svg" alt="草のイメージ">
+				</div>
+				<div class="info__bgtwo">
+					<img src="<?= IMG ?>/common/info_bg2.webp" alt="草刈りのイメージ">
+				</div>
 			</div>
-			<div class="info__bgtwo">
-				<img src="<?= IMG ?>/common/info_bg2.webp" alt="草刈りのイメージ">
-			</div>
-		</div>
-	</section>
+		</section>
+	<?php
+		wp_reset_postdata();
+	}
+	?>
 	<div class="toples">
 		<div class="container">
 			<div class="toples__contents">
