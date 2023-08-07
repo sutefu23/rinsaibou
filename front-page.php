@@ -106,96 +106,82 @@ get_header();
 							</tr>
 						</thead>
 						<tbody>
-							<!-- 1 -->
-							<tr>
-								<td>
-									<p u-hidden-pc>開催日</p>6月6日（月）<br>～8日（水）<br>(３日間）
-								</td>
-								<td>
-									<p u-hidden-pc>講習会の種類</p>伐木等の業務特別教育<br>
-									（チェーンソー）
-								</td>
-								<td>
-									<p u-hidden-pc>開催場所</p>１日目<br>
-									天神チクモクビル<br>
-									２・３日目<br>
-									四王寺県民の森
-								</td>
-								<td>
-									<p u-hidden-pc>講習時間</p>日程により相違<br>
-									詳細は開催要領<br>
-									をご欄ください
-								</td>
-								<td>
-									<p u-hidden-pc>定員</p>終了
-								</td>
-								<td>
-									<p u-hidden-pc>受講料(税込)</p>19,250円
-								</td>
-								<td>
-									<p u-hidden-pc>申込書</p><a href="#">PDF</a>
-								</td>
-							</tr>
-							<!-- 2 -->
-							<tr>
-								<td>
-									<p u-hidden-pc>開催日</p>6月3日（金）<br>（１日間）
-								</td>
-								<td>
-									<p u-hidden-pc>講習会の種類</p>伐木等の業務特別教育<br>
-									（チェーンソー）
-								</td>
-								<td>
-									<p u-hidden-pc>開催場所</p>１日目<br>
-									天神チクモクビル<br>
-									２・３日目<br>
-									四王寺県民の森
-								</td>
-								<td>
-									<p u-hidden-pc>講習時間</p>日程により相違<br>
-									詳細は開催要領<br>
-									をご欄ください
-								</td>
-								<td>
-									<p u-hidden-pc>定員</p>終了
-								</td>
-								<td>
-									<p u-hidden-pc>受講料(税込)</p>19,250円
-								</td>
-								<td>
-									<p u-hidden-pc>申込書</p><a href="#">PDF</a>
-								</td>
-							</tr>
-							<!-- 3 -->
-							<tr>
-								<td>
-									<p u-hidden-pc>開催日</p>6月6日（月）<br>～8日（水）<br>(３日間）
-								</td>
-								<td>
-									<p u-hidden-pc>講習会の種類</p>伐木等の業務特別教育<br>
-									（チェーンソー）
-								</td>
-								<td>
-									<p u-hidden-pc>開催場所</p>１日目<br>
-									天神チクモクビル<br>
-									２・３日目<br>
-									四王寺県民の森
-								</td>
-								<td>
-									<p u-hidden-pc>講習時間</p>日程により相違<br>
-									詳細は開催要領<br>
-									をご欄ください
-								</td>
-								<td>
-									<p u-hidden-pc>定員</p>終了
-								</td>
-								<td>
-									<p u-hidden-pc>受講料(税込)</p>19,250円
-								</td>
-								<td>
-									<p u-hidden-pc>申込書</p><a href="#">PDF</a>
-								</td>
-							</tr>
+							<?php
+							$p = new WP_Query(['post_type' => 'seminars', 'posts_per_page' => 3]);
+							if ($p->have_posts()) {
+							?>
+								<!-- 1 -->
+								<?php
+								while ($p->have_posts()) {
+									$p->the_post();
+								?>
+									<tr>
+										<td>
+											<p u-hidden-pc>開催日</p><time>
+												<?php $start_lesson = strtotime(SCF::get('start_lesson'));
+												$end_lesson = strtotime(SCF::get('end_lesson')); ?>
+												<?= date('n月j日', $start_lesson) ?>
+											</time><br>
+											<?php if ($start_lesson !== $end_lesson) { ?>
+												〜
+												<?= date('n月j日', $end_lesson) ?><br>(<?= date('j日', ($end_lesson - $start_lesson)) ?>間）
+											<?php } ?>
+
+										</td>
+										<td>
+											<p u-hidden-pc>講習会の種類</p><?php echo post_custom('lesson_select'); ?><br>
+										</td>
+										<td>
+											<p u-hidden-pc>開催場所</p>
+											<?php
+											$lesson_prace =
+												SCF::get('lesson_prace');
+											$lesson_praceday =
+												SCF::get('lesson_praceday');
+											if (count($lesson_praceday) > 1) { ?>
+												<?= $lesson_praceday[0]; ?>
+												<br>
+												<?= $lesson_prace[0]; ?>
+												<br>
+												<?= $lesson_praceday[1]; ?>
+												<br>
+												<?= $lesson_prace[1]; ?>
+											<?php } else {
+												echo $lesson_prace[0];
+											} ?>
+											<br>
+										</td>
+										<td>
+											<p u-hidden-pc>講習時間</p>
+											<?php if (SCF::get('lesson_timechange')) { ?>
+												日程により相違<br>
+												詳細は開催要領<br>
+												をご欄ください
+											<?php } else { ?>
+												<?= SCF::get('lesson_time'); ?>
+											<?php } ?>
+										</td>
+										<td>
+											<p u-hidden-pc>定員</p>
+											<?php if (SCF::get('lesson_full')) { ?>
+												終了
+											<?php } else { ?>
+												<?= SCF::get('lesson_count'); ?>名
+											<?php } ?>
+										</td>
+										<td>
+											<p u-hidden-pc>受講料(税込)</p>
+											<?php echo SCF::get('lesson_money'); ?>円
+										</td>
+										<td>
+											<p u-hidden-pc>申込書</p><a href="<?php echo wp_get_attachment_url(SCF::get('lesson_pdf')); ?>">PDF</a>
+										</td>
+									</tr>
+								<?php } ?>
+							<?php
+								wp_reset_postdata();
+							}
+							?>
 						</tbody>
 					</table>
 					<div class="topsche__btn">
