@@ -1896,6 +1896,12 @@ ul {
   border: #fff;
   padding: 5px 10px;
 }
+.topsche th:first-child {
+  min-width: 100px;
+}
+.topsche th:nth-child(5) {
+  min-width: 60px;
+}
 @media screen and (max-width: 767px) {
   .topsche th {
     display: none;
