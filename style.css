@@ -1460,6 +1460,14 @@ ul {
     margin-left: auto;
   }
 }
+.semiart__btns.-content {
+  margin-top: 40px;
+}
+@media screen and (max-width: 767px) {
+  .semiart__btns.-content {
+    font-size: 14px;
+  }
+}
 .semiart__btn {
   width: 160px;
 }

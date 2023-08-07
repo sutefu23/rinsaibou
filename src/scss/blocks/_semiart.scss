@@ -65,6 +65,12 @@
       gap: 10px;
       margin-left: auto;
     }
+    &.-content {
+      margin-top: 40px;
+      @include sm {
+        font-size: 14px;
+      }
+    }
   }
 
   &__btn {

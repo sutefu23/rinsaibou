@@ -131,6 +131,14 @@ get_header();
 							を使用した氏名及び通称を併記できるようになり、令和４年度から受講申込書の様式を一部変更しています。受講申込書の備考欄をご確認のう
 							え、申込書を作成してください。
 						</p>
+						<div class="semiart__btns -content">
+							<div class="semiart__btn">
+								<a href="#" class="btn -apply">申込書PDF</a>
+							</div>
+							<div class="semiart__btn">
+								<a href="#" class="btn -content">開催要領PDF</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
