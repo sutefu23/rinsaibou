@@ -121,12 +121,12 @@ get_header();
 												<?php $start_lesson = strtotime(SCF::get('start_lesson'));
 												$end_lesson = strtotime(SCF::get('end_lesson')); ?>
 												<?= date('n月j日', $start_lesson) ?>
-											</time><br>
-											<?php if ($start_lesson !== $end_lesson) { ?>
-												〜
-												<?= date('n月j日', $end_lesson) ?><br>(<?= date('j日', ($end_lesson - $start_lesson)) ?>間）
-											<?php } ?>
-
+												<br>
+												<?php if ($start_lesson !== $end_lesson) { ?>
+													〜
+													<?= date('n月j日', $end_lesson) ?><br>(<?= date('j日', ($end_lesson - $start_lesson)) ?>間）
+												<?php } ?>
+											</time>
 										</td>
 										<td>
 											<p u-hidden-pc>講習会の種類</p><?php echo post_custom('lesson_select'); ?><br>
@@ -138,18 +138,17 @@ get_header();
 												SCF::get('lesson_prace');
 											$lesson_praceday =
 												SCF::get('lesson_praceday');
-											if (count($lesson_praceday) > 1) { ?>
-												<?= $lesson_praceday[0]; ?>
-												<br>
-												<?= $lesson_prace[0]; ?>
-												<br>
-												<?= $lesson_praceday[1]; ?>
-												<br>
-												<?= $lesson_prace[1]; ?>
+											if (count($lesson_praceday) > 1) {
+												for ($i = 0; $i < count($lesson_praceday); $i++) { ?>
+													<span class="u-block">
+														<?= $lesson_praceday[$i]; ?>
+														<br>
+														<?= $lesson_prace[$i]; ?>
+													</span>
+												<?php } ?>
 											<?php } else {
 												echo $lesson_prace[0];
 											} ?>
-											<br>
 										</td>
 										<td>
 											<p u-hidden-pc>講習時間</p>
