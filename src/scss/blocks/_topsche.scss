@@ -48,6 +48,9 @@
     &:nth-child(5) {
       min-width: 60px;
     }
+    &:nth-child(6) {
+      min-width: 92px;
+    }
     @include sm {
       display: none;
     }

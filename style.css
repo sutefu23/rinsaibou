@@ -1902,6 +1902,9 @@ ul {
 .topsche th:nth-child(5) {
   min-width: 60px;
 }
+.topsche th:nth-child(6) {
+  min-width: 92px;
+}
 @media screen and (max-width: 767px) {
   .topsche th {
     display: none;
