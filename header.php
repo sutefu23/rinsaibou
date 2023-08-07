@@ -36,7 +36,7 @@
 					<ul class="drawer__list">
 						<li><a href="/" class="drawer__link">ホーム</a></li>
 						<li><a href="/about" class="drawer__link">組織概要</a></li>
-						<li><a href="/seminor" class="drawer__link">講習会案内</a></li>
+						<li><a href="/seminar" class="drawer__link">講習会案内</a></li>
 						<li><a href="/info" class="drawer__link">お知らせ</a></li>
 						<li><a href="/contact" class="drawer__link">お問い合わせ</a></li>
 						<li>
@@ -55,7 +55,7 @@
 					<ul class="header__list">
 						<li><a href="/" class="header__link">ホーム</a></li>
 						<li><a href="/about" class="header__link">組織概要</a></li>
-						<li><a href="/seminor" class="header__link">講習会案内</a></li>
+						<li><a href="/seminar" class="header__link">講習会案内</a></li>
 						<li><a href="/info" class="header__link">お知らせ</a></li>
 						<li><a href="/contact" class="header__link">お問い合わせ</a></li>
 					</ul>
