@@ -5,7 +5,7 @@
 				<li><a href="/">ホーム</a></li>
 				<li><a href="/about">組織概要</a></li>
 				<li><a href="/seminar">講習会案内</a></li>
-				<li><a href="/contact">お知らせ</a></li>
+				<li><a href="/info">お知らせ</a></li>
 			</ul>
 		</nav>
 	</div>
