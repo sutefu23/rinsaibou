@@ -47,9 +47,11 @@ get_header();
 						<h3>技能講習</h3>
 						<p>木材加工用機械作業主任者
 							技能講習を行っています。<br>
-							技能講習登録：福岡労働局 登録期限：2024年3月30日</p>
+							技能講習登録：福岡労働局 登録期限：<?php echo get_current_registration_limit();?></p>
 						<div class="seminors__btn">
-							<a href="/seminor1" class="btn -flat -arrow">最新の講習会はこちら</a>
+						<?php if(get_latest_seminar_permalink_by_term('skill')):?>
+							<a href="<?php echo get_latest_seminar_permalink_by_term('skill');?>" class="btn -flat -arrow">最新の講習会はこちら</a>
+						<?php endif;?>
 						</div>
 					</div>
 				</li>
@@ -66,7 +68,9 @@ get_header();
 						<h3>安全衛生特別教育</h3>
 						<p>伐木・チェーンソー作業従事者特別教育を行っています。</p>
 						<div class="seminors__btn">
-							<a href="/seminor1" class="btn -flat -arrow">最新の講習会はこちら</a>
+						<?php if(get_latest_seminar_permalink_by_term('safety')):?>
+							<a href="<?php echo get_latest_seminar_permalink_by_term('safety');?>" class="btn -flat -arrow">最新の講習会はこちら</a>
+						<?php endif;?>
 						</div>
 					</div>
 				</li>
@@ -83,7 +87,9 @@ get_header();
 						<h3>行政通達に基づく安全衛生教育等</h3>
 						<p>刈払機取り扱い作業者安全衛生教育を行っています。</p>
 						<div class="seminors__btn">
-							<a href="/seminor1" class="btn -flat -arrow">最新の講習会はこちら</a>
+						<?php if(get_latest_seminar_permalink_by_term('government')):?>
+							<a href="<?php echo get_latest_seminar_permalink_by_term('government');?>" class="btn -flat -arrow">最新の講習会はこちら</a>
+						<?php endif;?>
 						</div>
 					</div>
 				</li>
@@ -98,7 +104,9 @@ get_header();
 						<p>安全巡回指導、振動障害巡回特殊健診、
 							実践的リスクアセスメント導入のための集団指導会を行っています。</p>
 						<div class="seminors__btn">
-							<a href="/seminor1" class="btn -flat -arrow">最新の講習会はこちら</a>
+						<?php if(get_latest_seminar_permalink_by_term('others')):?>
+							<a href="<?php echo get_latest_seminar_permalink_by_term('others');?>" class="btn -flat -arrow">最新の講習会はこちら</a>
+						<?php endif;?>
 						</div>
 					</div>
 				</li>

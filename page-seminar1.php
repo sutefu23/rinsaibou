@@ -35,7 +35,7 @@ get_header();
 							2日目 県民の森（Google Map）<br><br>
 							<span class="u-font-bold">講習時間</span><br>
 							9時15分～16時30分<br><br>
-							<span class="u-font-bold"></span>定員<br>
+							<span class="u-font-bold">定員</span><br>
 							40名<br><br>
 							<span class="u-font-bold">受講料（税込）</span><br>
 							19,250円<br><br>

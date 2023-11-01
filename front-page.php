@@ -89,9 +89,9 @@ get_header();
 				</header>
 				<div class="topsche__box">
 					<div class="topsche__sub">
-						<h4>令和4年度
+						<h4><?php echo get_current_seminar_year();?>
 						</h4>
-						<small>技能講習登録：福岡労働局 登録期限：2024年3月30日</small>
+						<small>技能講習登録：福岡労働局 登録期限：<?php echo get_current_registration_limit();?></small>
 					</div>
 					<table>
 						<thead>
@@ -107,7 +107,9 @@ get_header();
 						</thead>
 						<tbody>
 							<?php
-							$p = new WP_Query(['post_type' => 'seminars', 'posts_per_page' => 3]);
+							foreach (['skill', 'safety', 'government', 'others'] as $term) :
+								# code...
+							$p = query_latest_seminar_by_term($term);
 							if ($p->have_posts()) {
 							?>
 								<!-- 1 -->
@@ -129,7 +131,7 @@ get_header();
 											</time>
 										</td>
 										<td>
-											<p u-hidden-pc>講習会の種類</p><?php echo post_custom('lesson_select'); ?><br>
+											<p u-hidden-pc>講習会の種類</p><?php echo post_custom('lesson_select'); ?><a href="<?php the_permalink(); ?>">詳細</a><br>
 										</td>
 										<td>
 											<p u-hidden-pc>開催場所</p>
@@ -173,7 +175,9 @@ get_header();
 											<?php echo SCF::get('lesson_money'); ?>円
 										</td>
 										<td>
+											<?php if(SCF::get('lesson_pdf')):?>
 											<p u-hidden-pc>申込書</p><a href="<?php echo wp_get_attachment_url(SCF::get('lesson_pdf')); ?>">PDF</a>
+											<?php endif;?>
 										</td>
 									</tr>
 								<?php } ?>
@@ -181,6 +185,8 @@ get_header();
 								wp_reset_postdata();
 							}
 							?>
+						<?php
+							endforeach;//termループ終了?>
 						</tbody>
 					</table>
 					<div class="topsche__btn">

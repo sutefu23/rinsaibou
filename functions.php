@@ -38,6 +38,12 @@ require TEMPLATE_PATH . '/inc/query-controller.php';
  */
 require TEMPLATE_PATH . '/inc/excerpt.php';
 
+
+/**
+ * 年度／登録期限設定
+ */
+require TEMPLATE_PATH . '/inc/limit-option.php';
+
 /**
  * MW FORM のビジュアル無効化
  */
@@ -101,3 +107,70 @@ function lc_create_post_type()
 	]);
 }
 add_action('init', 'lc_create_post_type');
+
+
+/**
+ * 最新のseminarsの投稿を取得する関数
+ * 
+ * @param string $term_slug seminar-typeのtermのスラグ（government、skill、safety、othersのいずれか）
+ * @return WP_Query
+ */
+function query_latest_seminar_by_term($term_slug) {
+	$args = array(
+			'post_type' => 'seminars',
+			'tax_query' => array(
+					array(
+							'taxonomy' => 'seminar-type',
+							'field'    => 'slug',
+							'terms'    => $term_slug,
+					),
+			),
+			'posts_per_page' => 1,
+			'orderby' => 'date',
+			'order' => 'DESC',
+	);
+
+	return new WP_Query($args);
+}
+
+/**
+ * 最新のseminarsの投稿のpermalinkを取得する関数
+ * 
+ * @param string $term_slug seminar-typeのtermのスラグ（government、skill、safety、othersのいずれか）
+ * @return string|false 投稿が見つかればそのpermalinkを返し、それ以外はfalseを返す
+ */
+function get_latest_seminar_permalink_by_term($term_slug) {
+	$query = query_latest_seminar_by_term($term_slug);
+	if($query->have_posts()) {
+			$latest_seminar = $query->posts[0];
+			return get_permalink($latest_seminar->ID);
+	} else {
+			return false;
+	}
+}
+
+/**
+ * オプションで指定した講習会年度を取得する関数
+ * 
+ * @return string 講習会年度
+ * */
+function get_current_seminar_year() {
+	$options = get_option( 'rsb_limit_option' );
+	if(count($options) > 0 && $options['term']){
+		return $options['term'];
+	}
+}
+
+/**
+ * オプションで指定した講習会年度を取得する関数
+ * 
+ * @return string 講習会年度
+ * */
+function get_current_registration_limit() {
+	$options = get_option( 'rsb_limit_option' );
+	date_default_timezone_set('Asia/Tokyo');
+	if(count($options) > 0 && $options['limit_date']){
+		$limit_date = new DateTime($options['limit_date']);
+		return $limit_date->format('Y年m月d日');
+	}
+}
