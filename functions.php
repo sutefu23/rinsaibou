@@ -132,6 +132,19 @@ function query_latest_seminar_by_term($term_slug) {
 
 	return new WP_Query($args);
 }
+/**
+ * セミナーのあるなしを判定する関数
+ * 
+ * @return bool
+ */
+function has_any_seminar(){
+	$seminar_count = 0;
+	foreach (['skill', 'safety', 'government', 'others'] as $term_slug){
+		$query = query_latest_seminar_by_term($term_slug);
+		$seminar_count = $seminar_count + $query->post_count;
+	}
+	return $seminar_count > 0;
+}
 
 /**
  * 最新のseminarsの投稿のpermalinkを取得する関数

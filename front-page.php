@@ -189,6 +189,9 @@ get_header();
 							endforeach;//termループ終了?>
 						</tbody>
 					</table>
+					<?php if(!has_any_seminar()):?>
+								<p>現在予定されている講習会はありません。</p>
+							<?php endif;?>
 					<div class="topsche__btn">
 						<a href="tel:0927142061" class="btn -topsche -arrow">
 							<p>電話で様式を申請する<span class="u-inline-block">方はこちら</span></p>
