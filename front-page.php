@@ -73,7 +73,7 @@ get_header();
 					</ul>
 					<p>3つの講習を開催しています。</p>
 					<div class="toples__btn">
-						<a href="#" class="btn -arrow">講習会の案内と説明はこちら</a>
+						<a href="/seminar" class="btn -arrow">講習会の案内と説明はこちら</a>
 					</div>
 				</div>
 				<div class="toples__right">
@@ -85,7 +85,7 @@ get_header();
 					<div class="toptitle__icon">
 						<img src="<?= IMG ?>/common/icon_lessons.svg" alt="ヘルメットアイコン">
 					</div>
-					<h2>講習会開催日程</h2>
+					<h2 id="seminar">講習会開催日程</h2>
 				</header>
 				<div class="topsche__box">
 					<div class="topsche__sub">
@@ -99,17 +99,26 @@ get_header();
 								<th>開催日</th>
 								<th>講習会の種類</th>
 								<th>開催場所</th>
-								<th>講習時間</th>
 								<th>定員</th>
 								<th>受講料<br>(税込)</th>
+								<th>申込期限</th>
 								<th>申込書</th>
 							</tr>
 						</thead>
 						<tbody>
 							<?php
-							foreach (['skill', 'safety', 'government', 'others'] as $term) :
+
 								# code...
-							$p = query_latest_seminar_by_term($term);
+							$args = array(
+								'post_type' => 'seminars',
+								'posts_per_page' => -1,
+								'meta_key' => 'start_lesson',//lesson_apply_limit
+								'orderby' => 'meta_value',
+								'meta_type' => 'DATE',
+								'order' => 'ASC'
+							);
+
+							$p = new WP_Query($args);
 							if ($p->have_posts()) {
 							?>
 								<!-- 1 -->
@@ -131,7 +140,7 @@ get_header();
 											</time>
 										</td>
 										<td>
-											<p u-hidden-pc>講習会の種類</p><?php echo post_custom('lesson_select'); ?><a href="<?php the_permalink(); ?>">詳細</a><br>
+											<p u-hidden-pc>講習会の種類</p><?php echo post_custom('lesson_select'); ?><div><a href="<?php the_permalink(); ?>">詳細</a></div>
 										</td>
 										<td>
 											<p u-hidden-pc>開催場所</p>
@@ -153,19 +162,9 @@ get_header();
 											} ?>
 										</td>
 										<td>
-											<p u-hidden-pc>講習時間</p>
-											<?php if (SCF::get('lesson_timechange')) { ?>
-												日程により相違<br>
-												詳細は開催要領<br>
-												をご欄ください
-											<?php } else { ?>
-												<?= SCF::get('lesson_time'); ?>
-											<?php } ?>
-										</td>
-										<td>
 											<p u-hidden-pc>定員</p>
 											<?php if (SCF::get('lesson_full')) { ?>
-												終了
+												<span>―</span>
 											<?php } else { ?>
 												<?= SCF::get('lesson_count'); ?>名
 											<?php } ?>
@@ -175,8 +174,22 @@ get_header();
 											<?php echo SCF::get('lesson_money'); ?>円
 										</td>
 										<td>
+											<p u-hidden-pc>申込期限</p>
+											<?php if (!SCF::get('lesson_full') && SCF::get('lesson_apply_limit')) { ?>
+												<?= date('n月j日', strtotime(SCF::get('lesson_apply_limit'))); ?>
+												<div style="font-size: 0.8em;">※定員になり次第終了</div>
+											<?php } ?>
+										</td>
+										<td>
+											<p u-hidden-pc>申込書</p>
 											<?php if(SCF::get('lesson_pdf')):?>
-											<p u-hidden-pc>申込書</p><a href="<?php echo wp_get_attachment_url(SCF::get('lesson_pdf')); ?>">PDF</a>
+												<?php if(!SCF::get('lesson_full')):?>
+												<a href="<?php echo wp_get_attachment_url(SCF::get('lesson_pdf')); ?>">PDF</a>
+												<?php else:?>
+													申込終了
+												<?php endif;?>
+											<?php else:?>
+												<div>申込開始前</div>
 											<?php endif;?>
 										</td>
 									</tr>
@@ -185,17 +198,15 @@ get_header();
 								wp_reset_postdata();
 							}
 							?>
-						<?php
-							endforeach;//termループ終了?>
 						</tbody>
 					</table>
 					<?php if(!has_any_seminar()):?>
 								<p>現在予定されている講習会はありません。</p>
 							<?php endif;?>
 					<div class="topsche__btn">
-						<a href="tel:0927142061" class="btn -topsche -arrow">
+<!-- 						<a href="tel:0927142061" class="btn -topsche -arrow">
 							<p>電話で様式を申請する<span class="u-inline-block">方はこちら</span></p>
-						</a>
+						</a> -->
 					</div>
 				</div>
 			</section>

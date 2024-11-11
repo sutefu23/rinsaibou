@@ -14,12 +14,20 @@ the_content();
 					<div class="semiart__inner">
 						<h1><?php the_title(); ?></h1>
 						<div class="semiart__btns">
+						<?php if(SCF::get('lesson_full')): ?>
+							申し込み終了
+						<?php else: ?>
+							<?php if(SCF::get('lesson_pdf')): ?>
 							<div class="semiart__btn">
-								<a href="<?php echo wp_get_attachment_url(SCF::get('lesson_pdf')); ?>" class="btn -apply">申込書PDF</a>
+								<a target="_blank" href="<?php echo wp_get_attachment_url(SCF::get('lesson_pdf')); ?>" class="btn -apply">申込書PDF</a>
 							</div>
+							<?php endif; ?>
+							<?php if(SCF::get('lesson_contentpdf')): ?>
 							<div class="semiart__btn">
-								<a href="<?php echo wp_get_attachment_url(SCF::get('lesson_contentpdf')); ?>" class="btn -content">開催要領PDF</a>
+								<a target="_blank" href="<?php echo wp_get_attachment_url(SCF::get('lesson_contentpdf')); ?>" class="btn -content">開催要領PDF</a>
 							</div>
+							<?php endif; ?>
+						<?php endif; ?>	
 						</div>
 					</div>
 				</div>
@@ -64,17 +72,23 @@ the_content();
 							<?= SCF::get('lesson_count'); ?>名<br><br>
 							<span class="u-font-bold">受講料（税込）</span><br>
 							<?= SCF::get('lesson_money'); ?>円<br><br>
-							<span class="u-font-bold">開催要領</span>
+							<span class="u-font-bold">その他</span>
 							<?= SCF::get('lesson_detail'); ?>
 							<br><br>
 						</p>
-						<div class="semiart__btns -content">
+						<div class="semiart__btns">
+						<?php if(!SCF::get('lesson_full')): ?>
+							<?php if(SCF::get('lesson_pdf')): ?>
 							<div class="semiart__btn">
-								<a href="#" class="btn -apply">申込書PDF</a>
+								<a target="_blank" href="<?php echo wp_get_attachment_url(SCF::get('lesson_pdf')); ?>" class="btn -apply">申込書PDF</a>
 							</div>
+							<?php endif; ?>
+							<?php if(SCF::get('lesson_contentpdf')): ?>
 							<div class="semiart__btn">
-								<a href="#" class="btn -content">開催要領PDF</a>
+								<a target="_blank" href="<?php echo wp_get_attachment_url(SCF::get('lesson_contentpdf')); ?>" class="btn -content">開催要領PDF</a>
 							</div>
+							<?php endif; ?>
+						<?php endif; ?>
 						</div>
 					</div>
 				</div>

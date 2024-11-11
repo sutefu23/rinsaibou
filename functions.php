@@ -126,8 +126,10 @@ function query_latest_seminar_by_term($term_slug) {
 					),
 			),
 			'posts_per_page' => 1,
-			'orderby' => 'date',
-			'order' => 'DESC',
+			'meta_key' => 'start_lesson',    // PostMetaのキー名を指定
+			'orderby' => 'meta_value',       // meta_valueで並び替え
+			'meta_type' => 'DATE',           // メタ値の型を指定
+			'order' => 'DESC',               // 降順（最新が先）
 	);
 
 	return new WP_Query($args);

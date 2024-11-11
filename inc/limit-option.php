@@ -24,7 +24,7 @@ class RinsaibouLimitOption {
         add_menu_page(
             '年度／登録期限設定',
             '年度／登録期限設定',
-            'edit_pages',
+            'edit_posts',
             'rsb_limit_option_setting',
             array($this, 'display_limit_setting_page'),
             '', //icon

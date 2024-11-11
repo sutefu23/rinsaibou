@@ -120,10 +120,12 @@ get_header();
 			</header>
 			<div class="low__box">
 				<ol>
-					<li>木材加工用機械作業主任者技能講習<span><a href="">労働安全衛生法施行令第6条第6号</a> および<br>
-							<a href="#">木材加工用機械作業主任者技能講習規程（昭和47年9月30日労働省告示）</a></span></li>
-					<li>伐木等の業務特別教育<span><a href="">労働安全衛生規則第36条第8号</a> および<br><a href="#">安全衛生特別教育規程（昭和47年9月30日労働省告示第92号）</a> 第10条</span></li>
-					<li>刈払機取扱作業者に対する安全衛生教育<span><a href="#">H12年2月16日付基発第66号</a></span></li>
+					<li>木材加工用機械作業主任者技能講習<span><a target="_blank" href="https://elaws.e-gov.go.jp/document?lawid=347CO0000000318#Mp-At_6">労働安全衛生法施行令第6条第6号</a> および<br>
+					<a target="_blank" href="https://www.mhlw.go.jp/web/t_doc?dataId=74120000&dataType=0&pageNo=1">木材加工用機械作業主任者技能講習規程（昭和47年9月30日労働省告示）</a></span></li>
+					<li>伐木等の業務特別教育<span><a target="_blank" href="https://elaws.e-gov.go.jp/document?lawid=347M50002000032#Mp-At_36">労働安全衛生規則第36条第8号</a> および<br>
+					<a target="_blank" href="https://www.mhlw.go.jp/web/t_doc?dataId=74085000&dataType=0&pageNo=2">安全衛生特別教育規程（昭和47年9月30日労働省告示第92号） 第10条</a></span></li>
+					<li>刈払機取扱作業者に対する安全衛生教育<span>
+						<a target="_blank" href="https://www.jaish.gr.jp/anzen/hor/hombun/hor1-41/hor1-41-24-1-0.htm">H12年2月16日付基発第66号</a></span></li>
 				</ol>
 				<div class="low__img">
 					<img src="<?= IMG ?>/common/low_img.webp" alt="刈払機講習">
