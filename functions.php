@@ -120,7 +120,7 @@ function query_latest_seminar_by_term($term_slug) {
 			'post_type' => 'seminars',
 			'tax_query' => array(
 					array(
-							'taxonomy' => 'seminar-type',
+							'seminars' => 'seminar-type',
 							'field'    => 'slug',
 							'terms'    => $term_slug,
 					),
@@ -189,3 +189,41 @@ function get_current_registration_limit() {
 		return $limit_date->format('Y年m月d日');
 	}
 }
+
+/**
+ * seminars投稿一覧にseminar-typeカラムを追加
+ */
+function add_seminar_type_column($columns) {
+	$new_columns = array();
+	
+	foreach($columns as $key => $value) {
+			if ($key == 'date') {
+					// dateカラムの前に新しいカラムを追加
+					$new_columns['seminar_type'] = 'セミナー種別';
+			}
+			$new_columns[$key] = $value;
+	}
+	
+	return $new_columns;
+}
+add_filter('manage_seminars_posts_columns', 'add_seminar_type_column');
+
+/**
+* セミナー種別カラムの内容を表示
+*/
+function display_seminar_type_column($column_name, $post_id) {
+	if ($column_name == 'seminar_type') {
+			$terms = get_the_terms($post_id, 'seminar-type');
+			
+			if (!empty($terms) && !is_wp_error($terms)) {
+					$term_names = array();
+					foreach ($terms as $term) {
+							$term_names[] = $term->name;
+					}
+					echo implode(', ', $term_names);
+			} else {
+					echo '未分類';
+			}
+	}
+}
+add_action('manage_seminars_posts_custom_column', 'display_seminar_type_column', 10, 2);
